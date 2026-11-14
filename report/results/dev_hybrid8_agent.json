@@ -6,26 +6,26 @@
     "N": 17
   },
   "grounded_answer": {
-    "0": 2,
-    "1": 1,
-    "2": 12,
+    "0": 1,
+    "1": 0,
+    "2": 14,
     "N": 15,
-    "mean": 1.6666666666666667
+    "mean": 1.8666666666666667
   },
   "citation_validity": {
-    "n": 22,
-    "N": 24
+    "n": 16,
+    "N": 18
   },
   "answer_citation_coverage": {
-    "n": 13,
-    "N": 13
+    "n": 15,
+    "N": 15
   },
   "abstention": {
     "n": 2,
     "N": 2
   },
   "false_abstention": {
-    "n": 2,
+    "n": 0,
     "N": 15
   },
   "split": "dev",
@@ -34,16 +34,16 @@
     "1": 8,
     "2": 9
   },
-  "mean_elapsed_seconds": 14.186504458823626,
-  "input_tokens": 37369,
-  "output_tokens": 1690,
+  "mean_elapsed_seconds": 2.5624439705882063,
+  "input_tokens": 39436,
+  "output_tokens": 1452,
   "thinking_tokens": 0,
-  "total_tokens_reported": 39059,
+  "total_tokens_reported": 40888,
   "failed_attempts": 0,
   "by_provider": {
-    "gemini": {
+    "openai": {
       "models": [
-        "gemini-3.5-flash-lite"
+        "gpt-5.4-mini"
       ],
       "cases": 17,
       "provider_errors": 0,
@@ -52,30 +52,30 @@
         "N": 17
       },
       "grounded_answer": {
-        "0": 2,
-        "1": 1,
-        "2": 12,
+        "0": 1,
+        "1": 0,
+        "2": 14,
         "N": 15,
-        "mean": 1.6666666666666667
+        "mean": 1.8666666666666667
       },
       "citation_validity": {
-        "n": 22,
-        "N": 24
+        "n": 16,
+        "N": 18
       },
       "answer_citation_coverage": {
-        "n": 13,
-        "N": 13
+        "n": 15,
+        "N": 15
       },
       "abstention": {
         "n": 2,
         "N": 2
       },
       "false_abstention": {
-        "n": 2,
+        "n": 0,
         "N": 15
       }
     }
   },
-  "usage_note": "Groq completion tokens can include reasoning; separate Groq reasoning counts are not available in these traces.",
+  "usage_note": "API token counts are reported by the selected controller; dollar cost is not inferred from token counts.",
   "cost": "Not inferred from tokens; consult account billing."
 }

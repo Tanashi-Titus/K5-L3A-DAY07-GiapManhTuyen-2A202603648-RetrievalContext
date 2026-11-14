@@ -5,6 +5,7 @@ from urllib.error import URLError
 from agentic import run_agent
 from gemini_controller import GeminiController
 from groq_controller import GroqController
+from openai_controller import OpenAIController
 
 
 class AgentRunError(RuntimeError):
@@ -23,6 +24,8 @@ class RecordingRetriever:
 
 def available_providers():
     providers={}
+    if os.getenv('OPENAI_API_KEY'):
+        providers['openai']=(OpenAIController,os.environ['OPENAI_API_KEY'],os.getenv('OPENAI_MODEL') or 'gpt-5.4-mini')
     if os.getenv('GEMINI_API_KEY'):
         providers['gemini']=(GeminiController,os.environ['GEMINI_API_KEY'],os.getenv('GEMINI_MODEL') or 'gemini-3.5-flash-lite')
     if os.getenv('GROQ_API_KEY'):
@@ -30,10 +33,11 @@ def available_providers():
     return providers
 
 
-def run_with_fallback(question, retriever, *, provider='gemini', top_k=3, budget=1600, max_searches=2):
+def run_with_fallback(question, retriever, *, provider='openai', top_k=3, budget=1600, max_searches=2):
     providers=available_providers()
     if provider not in providers: raise ValueError(f'Missing API key for {provider}')
-    order=[provider]+[name for name in ('gemini','groq') if name in providers and name!=provider]
+    fallback_order=() if provider=='openai' else ('gemini','groq','openai')
+    order=[provider]+[name for name in fallback_order if name in providers and name!=provider]
     attempts=[]
     for index in range(max(2,2*len(order))):
         name=order[index % len(order)]

@@ -1,141 +1,19 @@
 [
-  {
-    "query_id": "q03",
-    "citation_support": [],
-    "reason": "Từ chối câu có evidence.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q07",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q08",
-    "citation_support": [],
-    "reason": "Từ chối câu có evidence.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q12",
-    "citation_support": [],
-    "reason": "Từ chối câu có evidence.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q01",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q02",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q04",
-    "citation_support": [],
-    "reason": "Từ chối câu có evidence.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q05",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q06",
-    "citation_support": [
-      true
-    ],
-    "reason": "Nguồn hỗ trợ mô tả hàm Hamilton, nhưng câu trả lời không nói tới tích phân Lagrangian.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 1
-  },
-  {
-    "query_id": "q09",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q11",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q13",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q14",
-    "citation_support": [],
-    "reason": "Từ chối câu có evidence.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q15",
-    "citation_support": [
-      true
-    ],
-    "reason": "Trạng thái cơ bản ở T=0 là một trường hợp riêng của trạng thái nhiệt.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 1
-  },
-  {
-    "query_id": "du01",
-    "citation_support": [],
-    "reason": "Từ chối sau tìm kiếm; corpus không cung cấp phép đo sai số thí nghiệm.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true
-  },
-  {
-    "query_id": "du02",
-    "citation_support": [],
-    "reason": "Từ chối sau tìm kiếm; corpus không nêu nghiên cứu trên người.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true
-  },
-  {
-    "query_id": "q10",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  }
+  {"query_id":"q01","answer_grade":2,"citation_support":[true],"reason":"Both historical routes are stated in the cited page 2 passage."},
+  {"query_id":"q02","answer_grade":2,"citation_support":[true],"reason":"Dirac’s 1933 paper and its role are stated in the cited page 2 passage."},
+  {"query_id":"q03","answer_grade":0,"citation_support":[true],"reason":"The cited page supports the probability-amplitude statement, but the question asks for superposition and the response gives a different idea."},
+  {"query_id":"q04","answer_grade":0,"citation_support":[true],"reason":"The cited page supports the claim about Schrödinger’s first published time-independent derivation, but the question asks for the paper’s first main aim, which is the time-dependent derivation."},
+  {"query_id":"q05","answer_grade":2,"citation_support":[true],"reason":"The cited abstract states that the time-dependent equation is derived using the Hamilton–Jacobi equation and path-integral postulate."},
+  {"query_id":"q06","answer_grade":0,"citation_support":[],"reason":"The agent abstained on an answerable question; the evidence is in the path-integral postulate text."},
+  {"query_id":"q07","answer_grade":2,"citation_support":[true],"reason":"The cited page lists coherent and squeezed states as normalized examples."},
+  {"query_id":"q08","answer_grade":2,"citation_support":[true],"reason":"The cited page explicitly identifies tau as proper rest-frame time."},
+  {"query_id":"q09","answer_grade":2,"citation_support":[true],"reason":"The cited page gives S = px - Et."},
+  {"query_id":"q10","answer_grade":2,"citation_support":[true],"reason":"The cited page states that the density operator satisfying Equation 59 is an integral of motion."},
+  {"query_id":"q11","answer_grade":2,"citation_support":[true],"reason":"The cited page describes oscillator states and charged-particle states in an electric field."},
+  {"query_id":"q12","answer_grade":0,"citation_support":[],"reason":"The agent abstained; the indexed source says X is the charged particle’s position."},
+  {"query_id":"q13","answer_grade":2,"citation_support":[true],"reason":"The cited page gives m = omega = h-bar = 1 for the thermal-state section."},
+  {"query_id":"q14","answer_grade":1,"citation_support":[true],"reason":"The cited trajectory formulas identify a as acceleration, but the answer omits the requested equality a = eE."},
+  {"query_id":"q15","answer_grade":0,"citation_support":[true],"reason":"The cited passage supports a zero-temperature ground-state claim, which does not match the benchmark’s requested thermal-equilibrium initial-state evidence."},
+  {"query_id":"du01","abstention_correct":true,"citation_support":[],"reason":"Correctly abstained; the source specifies no measured experimental temperature uncertainty in kelvin."},
+  {"query_id":"du02","abstention_correct":true,"citation_support":[],"reason":"Correctly abstained; the theoretical papers report no human-participant count."}
 ]

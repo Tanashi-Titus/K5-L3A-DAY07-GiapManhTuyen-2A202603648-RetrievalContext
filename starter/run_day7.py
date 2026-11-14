@@ -1,4 +1,4 @@
-"""Ask a question using the Day 6 index and a real Mistral controller."""
+"""Ask a question using the Day 6 index and the OpenAI GPT controller."""
 import argparse
 import json
 import os
@@ -19,7 +19,7 @@ def main():
     local_env = Path(__file__).resolve().parents[1] / '.env'
     p.add_argument('--env-file', type=Path, default=local_env if local_env.exists() else DAY6 / 'starter' / '.env')
     p.add_argument('--model', default=None)
-    p.add_argument('--provider', choices=['gemini','groq'], default='gemini')
+    p.add_argument('--provider', choices=['openai','gemini','groq'], default='openai')
     p.add_argument('--top-k', type=int, default=3)
     p.add_argument('--budget', type=int, default=1600)
     p.add_argument('--max-searches', type=int, default=3)

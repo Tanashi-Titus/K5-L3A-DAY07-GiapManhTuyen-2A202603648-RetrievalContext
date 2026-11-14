@@ -6,4 +6,4 @@ Chốt cấu hình trên dev trước khi chạy test Day 7. So sánh các phư�
 
 Các cấu hình dự kiến gồm dense top-3 / 800 ký tự, BM25 top-3 / 800, hybrid RRF top-3 / 800, hybrid top-5 / 2400 và hybrid top-8 / 4000. Hai cấu hình top-5 và top-8 thử giả thuyết rằng giữ nhiều đoạn và mở rộng context làm tăng tỷ lệ đưa evidence tới agent. Lưu kết quả cả khi giả thuyết không cải thiện.
 
-Theo yêu cầu người dùng, nếu provider chạm giới hạn thì chạy lại toàn bộ câu đó với provider còn lại. Retrieval dùng model embedding và index không đổi. Với đánh giá agent, phải báo số câu theo từng provider và xem kết quả bị trộn provider là có yếu tố gây nhiễu; không quy mọi khác biệt trong câu trả lời cho retrieval.
+Toàn bộ lượt chạy agent trong benchmark này dùng cùng cấu hình GPT qua OpenAI. Không chuyển câu sang model khác. Lỗi API được giữ nguyên trong kết quả và tính là lượt không hoàn thành; không tự động gọi lại để thay thế lỗi đó. Retrieval dùng model embedding và index không đổi.

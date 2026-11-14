@@ -1,158 +1,19 @@
 [
-  {
-    "query_id": "q01",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q02",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q03",
-    "citation_support": [
-      true,
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q04",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q05",
-    "citation_support": [
-      true,
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q06",
-    "citation_support": [
-      true,
-      true,
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q07",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q08",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q09",
-    "citation_support": [
-      true,
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q10",
-    "citation_support": [
-      true
-    ],
-    "reason": "Bản q10 đã làm rõ Equation (59); citation nêu toán tử mật độ.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q11",
-    "citation_support": [
-      true,
-      true,
-      true,
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q12",
-    "citation_support": [],
-    "reason": "Agent từ chối câu có đáp án.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q13",
-    "citation_support": [],
-    "reason": "Model nêu đúng m = ω = ℏ = 1 nhưng không gắn citation; agent từ chối.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0
-  },
-  {
-    "query_id": "q14",
-    "citation_support": [
-      true
-    ],
-    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2
-  },
-  {
-    "query_id": "q15",
-    "citation_support": [
-      true,
-      true,
-      false,
-      false
-    ],
-    "reason": "Nêu đúng trạng thái nhiệt, nhưng mở rộng các trạng thái ví dụ chung thành trường hợp bỏ thế mà các nguồn cuối không chứng minh.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 1
-  },
-  {
-    "query_id": "du01",
-    "citation_support": [],
-    "reason": "Từ chối sau khi tìm; không thấy phép đo sai số trong corpus lý thuyết.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true
-  },
-  {
-    "query_id": "du02",
-    "citation_support": [],
-    "reason": "Từ chối sau khi tìm; corpus không mô tả thử nghiệm trên người.",
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true
-  }
+  {"query_id":"q01","answer_grade":2,"citation_support":[true],"reason":"The cited page 2 passage lists matrix and wave mechanics as the two separate routes."},
+  {"query_id":"q02","answer_grade":2,"citation_support":[true],"reason":"The cited page 2 passage says Dirac’s 1933 paper laid the conceptual foundations."},
+  {"query_id":"q03","answer_grade":2,"citation_support":[true],"reason":"The cited page 2 passage explicitly names quantum-mechanical superposition."},
+  {"query_id":"q04","answer_grade":2,"citation_support":[true],"reason":"The cited page 4 passage states the first aim: derive the time-dependent equation from Hamilton–Jacobi and the path-integral postulate."},
+  {"query_id":"q05","answer_grade":2,"citation_support":[true,true],"reason":"Both citations support the Hamilton–Jacobi equation and path-integral derivation."},
+  {"query_id":"q06","answer_grade":2,"citation_support":[true,true],"reason":"The cited page 6 passages define action as the time integral of the Lagrangian along the path."},
+  {"query_id":"q07","answer_grade":2,"citation_support":[true],"reason":"The cited page lists coherent and squeezed states."},
+  {"query_id":"q08","answer_grade":2,"citation_support":[true],"reason":"The cited page explicitly identifies tau as proper rest-frame time."},
+  {"query_id":"q09","answer_grade":2,"citation_support":[true],"reason":"The cited page gives S = px - Et."},
+  {"query_id":"q10","answer_grade":2,"citation_support":[false],"reason":"The answer is correct, but its citation is page 8, which defines the density-operator evolution equation and does not support the integral-of-motion claim on page 9."},
+  {"query_id":"q11","answer_grade":2,"citation_support":[true,true],"reason":"The cited abstract and introduction support oscillator states and a charged particle moving in an electric field."},
+  {"query_id":"q12","answer_grade":2,"citation_support":[false],"reason":"The answer identifies position, but its citation discusses the optical tomogram and does not establish that X is the charged particle’s position."},
+  {"query_id":"q13","answer_grade":2,"citation_support":[true],"reason":"The cited page gives m = omega = h-bar = 1 for the thermal-state section."},
+  {"query_id":"q14","answer_grade":2,"citation_support":[true],"reason":"The cited page explicitly defines a = eE as charge acceleration."},
+  {"query_id":"q15","answer_grade":0,"citation_support":[true],"reason":"The citation supports a ground state at T = 0, but the response does not give the expected thermal-equilibrium initial state."},
+  {"query_id":"du01","abstention_correct":true,"citation_support":[],"reason":"Correctly abstained; the source specifies no measured experimental temperature uncertainty in kelvin."},
+  {"query_id":"du02","abstention_correct":true,"citation_support":[],"reason":"Correctly abstained; the theoretical papers report no human-participant count."}
 ]

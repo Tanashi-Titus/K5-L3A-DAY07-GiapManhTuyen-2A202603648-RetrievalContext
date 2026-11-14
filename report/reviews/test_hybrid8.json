@@ -1,60 +1,9 @@
 [
-  {
-    "query_id": "t01",
-    "citation_support": [
-      true
-    ],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2,
-    "context_grade": 2,
-    "reason": "Context trang 4 hỗ trợ trạng thái lượng tử; citation đúng."
-  },
-  {
-    "query_id": "t02",
-    "citation_support": [],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0,
-    "context_grade": 2,
-    "reason": "Context trang 9 có q là vị trí và p là động lượng; model trả lời đúng nhưng ID thứ hai có khoảng trắng nên agent từ chối."
-  },
-  {
-    "query_id": "t03",
-    "citation_support": [],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0,
-    "context_grade": 2,
-    "reason": "Context trang 9 hỗ trợ tính unitary; parser nhầm ngoặc LaTeX thành citation và ID có khoảng trắng nên agent từ chối."
-  },
-  {
-    "query_id": "t04",
-    "citation_support": [
-      true
-    ],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 2,
-    "context_grade": 2,
-    "reason": "Context trang 12 nêu Shannon entropy; citation đúng."
-  },
-  {
-    "query_id": "t05",
-    "citation_support": [],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "answer_grade": 0,
-    "context_grade": 0,
-    "reason": "Context liên quan entropy nhưng không nêu S = S1 + S2; agent từ chối."
-  },
-  {
-    "query_id": "tu01",
-    "citation_support": [],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true,
-    "reason": "Agent đã tìm và từ chối; corpus không nêu phép đo thiết bị/nhiệt độ được hỏi."
-  },
-  {
-    "query_id": "tu02",
-    "citation_support": [],
-    "reviewer": "assistant; cần người nộp kiểm tra",
-    "abstention_correct": true,
-    "reason": "Agent đã tìm và từ chối; corpus không nêu phép đo thiết bị/nhiệt độ được hỏi."
-  }
+  {"query_id":"t01","answer_grade":2,"citation_support":[true],"reason":"Cited source states the optical tomogram can describe quantum states."},
+  {"query_id":"t02","answer_grade":2,"citation_support":[true,true],"reason":"Both cited passages identify q and p as position and momentum."},
+  {"query_id":"t03","answer_grade":2,"citation_support":[true],"reason":"Cited source states the evolution operator is unitary for Hermitian Hamiltonian."},
+  {"query_id":"t04","answer_grade":2,"citation_support":[true],"reason":"Cited source names Shannon entropy for the conditional distributions."},
+  {"query_id":"t05","answer_grade":2,"citation_support":[true],"reason":"Cited source gives S = S1 + S2 and the two terms."},
+  {"query_id":"tu02","abstention_correct":true,"citation_support":[],"reason":"Correctly abstained; the source supplies no measured laboratory temperature."},
+  {"query_id":"tu01","provider_error":true,"citation_support":[],"reason":"OpenAI request timed out; the recorded failure was not retried and counts as one missed test case."}
 ]

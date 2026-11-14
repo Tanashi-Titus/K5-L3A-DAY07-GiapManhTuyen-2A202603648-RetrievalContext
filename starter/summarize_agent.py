@@ -13,17 +13,18 @@ def main():
     p.add_argument('--config', required=True)
     p.add_argument('--reviews', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--results-root', type=Path, default=ROOT/'starter'/'results')
     args = p.parse_args()
     cases=[c for c in json.loads((ROOT/'data'/'benchmark_day7.json').read_text(encoding='utf-8')) if c['split']==args.split]
-    traces=[t for t in json.loads((ROOT/'starter'/'results'/'agent'/f'{args.split}_traces.json').read_text(encoding='utf-8')) if t['configuration']==args.config]
+    traces=[t for t in json.loads((args.results_root/'agent'/f'{args.split}_traces.json').read_text(encoding='utf-8')) if t['configuration']==args.config]
     reviews=json.loads(args.reviews.read_text(encoding='utf-8'))
     summary=aggregate(cases,traces,reviews)
     counts=[sum(e.get('event')=='search' for e in t['events']) for t in traces if t['status']!='error']
     all_usage=[u for t in traces for u in t.get('usage',[])]
     all_usage += [u for t in traces for attempt in t.get('failed_attempts',[]) for u in attempt.get('usage',[])]
     by_provider={}
-    for provider in ('gemini','groq'):
-        provider_traces=[t for t in traces if t.get('provider','gemini')==provider]
+    for provider in sorted({t.get('provider') for t in traces if t.get('provider')}):
+        provider_traces=[t for t in traces if t.get('provider')==provider]
         if not provider_traces: continue
         ids={t['query_id'] for t in provider_traces}
         provider_cases=[c for c in cases if c['id'] in ids]
@@ -37,7 +38,7 @@ def main():
                     'thinking_tokens':sum(u['usage'].get('thoughtsTokenCount',0) for u in all_usage),
                     'total_tokens_reported':sum(u['usage'].get('totalTokenCount',0) for u in all_usage),
                     'failed_attempts':sum(len(t.get('failed_attempts',[])) for t in traces), 'by_provider':by_provider,
-                    'usage_note':'Groq completion tokens can include reasoning; separate Groq reasoning counts are not available in these traces.',
+                    'usage_note':'API token counts are reported by the selected controller; dollar cost is not inferred from token counts.',
                     'cost':'Not inferred from tokens; consult account billing.'})
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

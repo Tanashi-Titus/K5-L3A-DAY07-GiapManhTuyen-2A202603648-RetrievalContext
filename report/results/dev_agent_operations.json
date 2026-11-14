@@ -3,87 +3,85 @@
     "configuration": "bm25-3-800",
     "cases": 17,
     "providers": {
-      "gemini": 17
+      "openai": 17
     },
     "statuses": {
-      "abstain": 7,
-      "answered": 10
+      "abstain": 4,
+      "answered": 13
     },
     "search_calls": {
-      "2": 12,
-      "1": 5
+      "1": 5,
+      "2": 12
     },
-    "reported_total_tokens": 13722,
+    "reported_total_tokens": 18315,
     "failed_attempts": 0
   },
   {
     "configuration": "dense-3-800",
     "cases": 17,
     "providers": {
-      "gemini": 17
+      "openai": 17
     },
     "statuses": {
-      "answered": 11,
-      "abstain": 6
+      "abstain": 5,
+      "answered": 12
     },
     "search_calls": {
-      "2": 16,
-      "1": 1
+      "1": 5,
+      "2": 12
     },
-    "reported_total_tokens": 16213,
+    "reported_total_tokens": 18433,
     "failed_attempts": 0
   },
   {
     "configuration": "hybrid-3-800",
     "cases": 17,
     "providers": {
-      "gemini": 10,
-      "groq": 7
+      "openai": 17
     },
     "statuses": {
-      "answered": 10,
-      "abstain": 7
+      "abstain": 5,
+      "answered": 12
     },
     "search_calls": {
-      "1": 4,
-      "2": 13
+      "1": 6,
+      "2": 11
     },
-    "reported_total_tokens": 18543,
-    "failed_attempts": 2
+    "reported_total_tokens": 17525,
+    "failed_attempts": 0
   },
   {
     "configuration": "hybrid-5-2400",
     "cases": 17,
     "providers": {
-      "groq": 7,
-      "gemini": 10
+      "openai": 17
     },
     "statuses": {
-      "answered": 12,
-      "abstain": 5
+      "abstain": 3,
+      "answered": 14
     },
     "search_calls": {
-      "1": 10,
-      "2": 7
+      "1": 9,
+      "2": 8
     },
-    "reported_total_tokens": 26607,
-    "failed_attempts": 4
+    "reported_total_tokens": 28086,
+    "failed_attempts": 0
   },
   {
     "configuration": "hybrid-8-4000",
     "cases": 17,
     "providers": {
-      "gemini": 17
+      "openai": 17
     },
     "statuses": {
-      "answered": 13,
-      "abstain": 4
+      "abstain": 2,
+      "answered": 15
     },
     "search_calls": {
       "1": 8,
       "2": 9
     },
-    "reported_total_tokens": 39059,
+    "reported_total_tokens": 40888,
     "failed_attempts": 0
   }
 ]

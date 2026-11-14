@@ -1,4 +1,4 @@
-"""Run real agent cases and switch provider when a rate limit is reached."""
+"""Run real agent cases with the selected chat model and record any rate limits."""
 import argparse
 import hashlib
 import json
@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from day6_retrieval import Day6Retriever, DEFAULT_STORE, DEFAULT_MODEL
 from gemini_controller import GeminiController
 from groq_controller import GroqController
+from openai_controller import OpenAIController
 from agent_runtime import AgentRunError, available_providers, run_with_fallback
 from retrieval_benchmark import CONFIGS, ROOT
 
@@ -22,10 +23,10 @@ def main():
     p.add_argument('--env-file', type=Path, default=ROOT/'.env')
     p.add_argument('--store', type=Path, default=DEFAULT_STORE)
     p.add_argument('--embedding-model', type=Path, default=DEFAULT_MODEL)
-    p.add_argument('--provider', choices=['gemini','groq'], default='gemini')
+    p.add_argument('--provider', choices=['openai','gemini','groq'], default='openai')
     args = p.parse_args()
     if args.split == 'test':
-        selection_path = ROOT/'starter'/'results'/'retrieval'/'selection.json'
+        selection_path = args.output.parent/'retrieval'/'selection.json'
         if not selection_path.exists(): raise ValueError('Record selection on dev before running test')
         selection = json.loads(selection_path.read_text(encoding='utf-8'))
         if selection.get('benchmark_sha256') != hashlib.sha256(args.benchmark.read_bytes()).hexdigest():
@@ -42,9 +43,12 @@ def main():
     path = args.output/f'{args.split}_traces.json'
     traces = json.loads(path.read_text(encoding='utf-8')) if path.exists() else []
     models = {item[2] for item in providers.values()}
-    versions = {GeminiController.version,GroqController.version}
+    versions = {GeminiController.version,GroqController.version,OpenAIController.version}
     completed = {(x['configuration'], x['query_id'], x['question'], x.get('max_searches')) for x in traces
-                 if x['status'] in ('answered', 'abstain') and x.get('controller_version') in versions and x.get('model') in models}
+                 if ((x['status'] in ('answered', 'abstain') and x.get('controller_version') in versions
+                      and x.get('model') in models)
+                     or (x['status'] == 'error' and any(a.get('provider') == args.provider
+                                                        for a in x.get('failed_attempts', []))))}
     for name in args.configs:
         method, top_k, budget = CONFIGS[name]
         retriever.method = method
