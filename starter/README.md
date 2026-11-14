@@ -1,5 +1,39 @@
 # Starter Day 7
 
+## Kết nối Day 6 đang phát triển
+
+`day6_retrieval.py` đọc collection `day06-c` từ Chroma của Day 6 và hỗ trợ dense, BM25 và hybrid RRF. Dense dùng cùng EmbeddingGemma 2, prompt `SearchQuery` và vector 768 chiều như index Day 6. `run_day7.py` kết nối agent với Gemini hoặc Groq qua tool calling; đặt `GEMINI_API_KEY`, `GEMINI_MODEL`, `GROQ_API_KEY` và `GROQ_MODEL` trong `.env` ở thư mục gốc (file này không được Git theo dõi). Chọn provider ban đầu bằng `--provider gemini` hoặc `--provider groq`; khi gặp HTTP 429, HTTP 503 hoặc lỗi kết nối, chương trình chạy lại câu đó từ đầu bằng provider còn lại. Nếu cả hai không dùng được, ghi lỗi và dừng để có thể tiếp tục sau. Trace ghi provider, model, các lần thử lỗi và số token đã báo.
+
+```powershell
+$env:PYTHONUTF8='1'
+D:\miniconda3\python.exe starter\run_day7.py "What is the Hamilton-Jacobi equation used for?" --method hybrid
+```
+
+Có thể đổi `--store`, `--embedding-model`, `--env-file`, `--method`, `--top-k`, `--budget` và `--max-searches`. Đường dẫn mặc định trỏ đến máy đã chạy Day 6; cả hai lệnh benchmark đều nhận `--store` và `--embedding-model`, còn lệnh tạo câu hỏi nhận `--day6-root`. Dùng đúng model và prompt query đã tạo index, kể cả khi chuyển model sang đường dẫn khác. Các phụ thuộc Python được ghi trong `requirements-day7.txt` và dùng Miniconda base hiện có. Review thủ công cần đối chiếu với tài liệu nguồn; không dùng kết quả mock để báo cáo chất lượng.
+
+Tạo benchmark và so sánh dev (kết quả và các đoạn nguồn nằm trong `starter/results/`, không được Git theo dõi):
+
+```powershell
+D:\miniconda3\python.exe starter\prepare_benchmark.py
+D:\miniconda3\python.exe starter\retrieval_benchmark.py --split dev
+D:\miniconda3\python.exe starter\agent_benchmark.py --split dev --configs bm25-3-800 dense-3-800 hybrid-3-800 hybrid-5-2400 hybrid-8-4000
+```
+
+Agent lưu mỗi câu ngay sau khi chạy và có thể chạy lại lệnh để tiếp tục; lỗi API được lưu riêng. Xem `report/dev_selection_criteria.md` trước khi chọn cấu hình và chạy test.
+
+Sau khi chạy đủ các cấu hình dev và tự chấm baseline cùng cấu hình được chọn, khóa lựa chọn bằng `select_config.py` (điền tên cấu hình, đường dẫn hai file review và lý do). Script yêu cầu các trace dev đầy đủ và lưu hash của benchmark. Sau đó:
+
+```powershell
+D:\miniconda3\python.exe starter\retrieval_benchmark.py --split test
+D:\miniconda3\python.exe starter\agent_benchmark.py --split test --configs <baseline> <cau-hinh-da-chon>
+D:\miniconda3\python.exe starter\prepare_reviews.py --split test --config <cau-hinh> --output starter\results\agent\test-review.json
+D:\miniconda3\python.exe starter\summarize_agent.py --split test --config <cau-hinh> --reviews starter\results\agent\test-review.json --output starter\results\agent\test-summary.json
+```
+
+Thay các giá trị trong dấu `< >`. Review phải đọc context, câu trả lời và nguồn cho từng câu trước khi điền điểm và nhãn citation; script tổng hợp không tự chấm. Kết quả test chỉ dùng đánh giá cấu hình đã chốt, không dùng để điều chỉnh.
+
+Để xem một câu và toàn bộ context, nguồn được trích dẫn phục vụ review: `D:\miniconda3\python.exe starter\show_review.py --split test --config <cau-hinh> --query <id-cau>`. Lệnh này đọc đáp án chuẩn để phục vụ chấm sau khi chạy; đáp án chuẩn không được gửi cho agent.
+
 | File | Công dụng |
 |---|---|
 | `agentic.py` | Khung agent ví dụ với số lượt search, top-k và context budget có thể cấu hình |

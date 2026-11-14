@@ -1,0 +1,246 @@
+{
+  "split": "dev",
+  "benchmark_sha256": "cd2bd6e29da45a64381390009dd21e2907aa9ba829a10755b97b3acd075e052e",
+  "methods": {
+    "bm25": {
+      "hit1_any_evidence": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      },
+      "evidence_hit3_any": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "complete_evidence_at_3": {
+        "n": 12,
+        "N": 15,
+        "rate": 0.8
+      },
+      "context_evidence_rate": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "mean_retrieval_seconds": 0.056746293333283876,
+      "by_group": {
+        "chart": {
+          "evidence_hit3": {
+            "n": 2,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "multi_hop": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "table": {
+          "evidence_hit3": {
+            "n": 2,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "text": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "visual": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        }
+      }
+    },
+    "dense_cosine": {
+      "hit1_any_evidence": {
+        "n": 8,
+        "N": 15,
+        "rate": 0.5333333333333333
+      },
+      "evidence_hit3_any": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "complete_evidence_at_3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "context_evidence_rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "mean_retrieval_seconds": 0.3437359800000801,
+      "by_group": {
+        "chart": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "multi_hop": {
+          "evidence_hit3": {
+            "n": 2,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 2,
+            "N": 3
+          }
+        },
+        "table": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "text": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "visual": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        }
+      }
+    },
+    "hybrid_rrf": {
+      "hit1_any_evidence": {
+        "n": 8,
+        "N": 15,
+        "rate": 0.5333333333333333
+      },
+      "evidence_hit3_any": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "complete_evidence_at_3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "context_evidence_rate": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "mean_retrieval_seconds": 0.2882944799999677,
+      "by_group": {
+        "chart": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "multi_hop": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "table": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "text": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        },
+        "visual": {
+          "evidence_hit3": {
+            "n": 3,
+            "N": 3
+          },
+          "context_complete": {
+            "n": 3,
+            "N": 3
+          }
+        }
+      }
+    }
+  },
+  "metric_definitions": {
+    "hit1_any_evidence": "At least one exact gold evidence passage is ranked first.",
+    "evidence_hit3_any": "At least one exact gold evidence passage is present in the top three.",
+    "complete_evidence_at_3": "Every required gold evidence passage is present in the top three.",
+    "context_evidence_rate": "Every required gold passage is included in pack_context(top-6, 5200 characters).",
+    "answerable_denominator": 15
+  },
+  "configuration": {
+    "top_k": 6,
+    "context_budget_chars": 5200,
+    "embedding_model": "D:\\Tuyen\\vinuni\\lab\\K5-L3A-Day05-Track3-ThoCode\\models\\embeddinggemma-2",
+    "document_prompt": "Document",
+    "query_prompt": "SearchQuery",
+    "dimensions": 768
+  }
+}

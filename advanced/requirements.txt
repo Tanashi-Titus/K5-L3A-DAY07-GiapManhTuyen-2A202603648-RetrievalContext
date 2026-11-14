@@ -1,0 +1,5 @@
+streamlit==1.57.0
+-r ../starter/requirements-day7.txt
+numpy>=2.2,<3
+pymupdf>=1.24
+streamlit>=1.40

@@ -1,0 +1,857 @@
+[
+  {
+    "id": "d-t01",
+    "split": "dev",
+    "group": "table",
+    "question": "In Table 1.1, what percentage of the labour force is projected to be unemployed in 2025?",
+    "answerable": true,
+    "expected_answer": "2.5%",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Unemployment (% of labour force) 2.3 2.3 2.3 2.5 3.0",
+        "visual_region": "Table 1.1, unemployment row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-t02",
+    "split": "dev",
+    "group": "table",
+    "question": "In Table 2.2, what are the employer and employee health-insurance contribution rates?",
+    "answerable": true,
+    "expected_answer": "3.0% for employers and 1.5% for employees.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Health Insurance 3.0 1.5",
+        "visual_region": "Table 2.2, Health Insurance row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-t03",
+    "split": "dev",
+    "group": "table",
+    "question": "What was the gasoline environmental protection tax rate in 2024/25?",
+    "answerable": true,
+    "expected_answer": "2,000 VND per litre (0.079 USD per litre).",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre 4 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-c01",
+    "split": "dev",
+    "group": "chart",
+    "question": "According to Figure 3.8, what is the estimated potential for solar rooftop power?",
+    "answerable": true,
+    "expected_answer": "147 GW.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.8. Viet Nam has a considerable renewable energy potential",
+        "visual_region": "Figure 3.8, Solar rooftop bar",
+        "visual_annotation": "Visual inspection of Figure 3.8: Solar rooftop is labelled 147 GW."
+      }
+    ]
+  },
+  {
+    "id": "d-c02",
+    "split": "dev",
+    "group": "chart",
+    "question": "What share of global semiconductor export value did Viet Nam have in Figure 4.19?",
+    "answerable": true,
+    "expected_answer": "2% in 2021.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Figure 4.19. Viet Nam is the 10th-largest global exporter of semiconductors",
+        "visual_region": "Figure 4.19, Viet Nam slice",
+        "visual_annotation": "Visual inspection of Figure 4.19: Viet Nam is labelled 2%; the figure concerns 2021 global semiconductor exports."
+      }
+    ]
+  },
+  {
+    "id": "d-c03",
+    "split": "dev",
+    "group": "chart",
+    "question": "Which economy has the highest old-age dependency ratio shown for 2050 in Figure 1.15?",
+    "answerable": true,
+    "expected_answer": "The OECD, at about 48%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 37,
+        "printed_page": 35,
+        "evidence": "Figure 1.15. The elderly dependency is currently low, but will rise sharply by mid-century",
+        "visual_region": "Figure 1.15, OECD 2050 bar",
+        "visual_annotation": "Visual inspection of Figure 1.15: among the 2050 bars, OECD is highest, just under 50% (approximately 48%)."
+      }
+    ]
+  },
+  {
+    "id": "d-m01",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "Combine Table 3.2 with the nearby discussion: what was the 2024/25 gasoline tax rate, and how did the 2023 tax cut affect receipts?",
+    "answerable": true,
+    "expected_answer": "The gasoline tax was 2,000 VND/litre (0.079 USD/litre); the cut was estimated to lower receipts from 0.54% to 0.41% of GDP.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "This is estimated to have reduced tax collection from 0.54% to 0.41% of GDP.",
+        "visual_region": "Text immediately above Table 3.2",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-m02",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "What 2024 GDP growth rate does Table 1.1 report, and what GDP growth target does the Section 1.1 discussion compare it with? Give both rates with the % sign.",
+    "answerable": true,
+    "expected_answer": "7.1% actual GDP growth and a 6.5% GDP growth target.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Real GDP 8.5 5.1 7.1",
+        "visual_region": "Table 1.1, Real GDP row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "In 2024, GDP increased by 7.1%, surpassing the government’s 6.5% target.",
+        "visual_region": "Section 1.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-m03",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "How much did Viet Nam’s combined solar and wind power capacity increase from 2020 to 2023, and what total clean-source capacity is planned for 2030?",
+    "answerable": true,
+    "expected_answer": "It rose from 17 GW to 23 GW, an increase of 6 GW; clean sources are planned to reach about 80 GW by 2030.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "solar and wind power capacity, which increased from 17 GW in 2020 to 23 GW in 2023",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "increase from about 45 GW in 2023 to 80 GW in 2030",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-x01",
+    "split": "dev",
+    "group": "text",
+    "question": "What was the annual average rate of real GDP growth in Viet Nam from 1990 to 2023?",
+    "answerable": true,
+    "expected_answer": "6.7%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 98,
+        "printed_page": 96,
+        "evidence": "Real GDP rose at a 6.7% annual average rate between 1990 and 2023",
+        "visual_region": "Section 4.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-x02",
+    "split": "dev",
+    "group": "text",
+    "question": "How many engineers did Viet Nam have in its semiconductor industry, according to the report?",
+    "answerable": true,
+    "expected_answer": "Around 26,000 engineers.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Viet Nam currently has around 26 000 engineers in the semiconductor industry",
+        "visual_region": "Box 4.2",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-x03",
+    "split": "dev",
+    "group": "text",
+    "question": "What percentage of secondary-school students in Korea continue to college or university, according to Box 4.3?",
+    "answerable": true,
+    "expected_answer": "More than 80%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 119,
+        "printed_page": 117,
+        "evidence": "more than 80% of secondary school graduates in Korea continue to college or universities",
+        "visual_region": "Box 4.3",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "d-u01",
+    "split": "dev",
+    "group": "text",
+    "question": "How many electric buses were registered in Hanoi in 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses transport decarbonisation and electric vehicles, but does not give a 2025 Hanoi electric-bus registration count."
+  },
+  {
+    "id": "d-u02",
+    "split": "dev",
+    "group": "text",
+    "question": "What was the exact sample size of the 2024 randomized trial of Vietnamese bank consolidation?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The survey discusses financial-sector risks and banking consolidation but does not report such a randomized trial or sample size."
+  },
+  {
+    "id": "d-u03",
+    "split": "dev",
+    "group": "text",
+    "question": "What was the province-level poverty rate in Viet Nam in 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report contains national and group-level poverty information, not 2025 poverty rates for each province."
+  },
+  {
+    "id": "d-v01",
+    "split": "dev",
+    "group": "visual",
+    "question": "In the city photograph, what is reflected on the water?",
+    "answerable": true,
+    "expected_answer": "The high-rise city skyline is reflected in the water.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 18,
+        "printed_page": 16,
+        "evidence": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_region": "Full-page urban photograph, water and skyline reflection",
+        "visual_annotation": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "d-v02",
+    "split": "dev",
+    "group": "visual",
+    "question": "What infrastructure is visible beside the cars in the transport photograph?",
+    "answerable": true,
+    "expected_answer": "Electric-vehicle charging posts with black cables are beside the cars.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 70,
+        "printed_page": 68,
+        "evidence": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_region": "Full-page photograph of EV charging posts",
+        "visual_annotation": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "d-v03",
+    "split": "dev",
+    "group": "visual",
+    "question": "What protective equipment does the foreground factory worker wear?",
+    "answerable": true,
+    "expected_answer": "A red cap, face mask and white gloves.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_region": "Full-page factory photograph, foreground worker",
+        "visual_annotation": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-t01",
+    "split": "test",
+    "group": "table",
+    "question": "What is the projected current-account balance for 2026 in Table 1.1?",
+    "answerable": true,
+    "expected_answer": "3.8% of GDP.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Current account balance (% of GDP) 0.3 5.9 5.7 4.2 3.8",
+        "visual_region": "Table 1.1, current-account row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-t02",
+    "split": "test",
+    "group": "table",
+    "question": "In Table 1.3, what is the estimated fiscal cost of reducing social-security contributions for low-income earners?",
+    "answerable": true,
+    "expected_answer": "1.0% of GDP in deficit-increasing costs (−1.0%).",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 38,
+        "printed_page": 36,
+        "evidence": "Reduce social security contributions for low-income earners (Chapter 2) -1.0",
+        "visual_region": "Table 1.3, low-income contribution row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-t03",
+    "split": "test",
+    "group": "table",
+    "question": "According to Table 2.2, what are the employer and employee unemployment-insurance rates?",
+    "answerable": true,
+    "expected_answer": "1.0% each.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Unemployment insurance 1.0 1.0",
+        "visual_region": "Table 2.2, unemployment-insurance row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-t04",
+    "split": "test",
+    "group": "table",
+    "question": "What was the 2024/25 environmental-protection tax rate on diesel in Table 3.2?",
+    "answerable": true,
+    "expected_answer": "1,000 VND per litre (0.039 USD per litre).",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Diesel fuel 1 000 VND/litre 2 000 VND/litre",
+        "visual_region": "Table 3.2, diesel row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-t05",
+    "split": "test",
+    "group": "table",
+    "question": "What reduction target did the 2025 plan set for unnecessary regulations and administrative procedures in Table 4.1?",
+    "answerable": true,
+    "expected_answer": "At least 30%, with a goal to reduce business costs by at least 3%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 130,
+        "printed_page": 128,
+        "evidence": "The government launched a plan in 2025 to cut at least 30%",
+        "visual_region": "Table 4.1, simplification action cell",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 130,
+        "printed_page": 128,
+        "evidence": "reduce business costs by at least 3%",
+        "visual_region": "Table 4.1, simplification action cell",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-t06",
+    "split": "test",
+    "group": "table",
+    "question": "What share of students pursue technical and vocational education and training, according to Table 4.3?",
+    "answerable": true,
+    "expected_answer": "6%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 135,
+        "printed_page": 133,
+        "evidence": "Only 6% of students pursue technical and vocational education and training",
+        "visual_region": "Table 4.3, education finding",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-v01",
+    "split": "test",
+    "group": "visual",
+    "question": "In the urban photograph, what prominent features appear together in the scene?",
+    "answerable": true,
+    "expected_answer": "High-rise city buildings stand beside a broad waterway, with their reflections visible on the water.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 18,
+        "printed_page": 16,
+        "evidence": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_region": "Full-page urban photograph, skyline and waterway",
+        "visual_annotation": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-v02",
+    "split": "test",
+    "group": "visual",
+    "question": "In the page 48 photograph, describe the foreground woman's garment and accessory, and identify what is visible at the left edge.",
+    "answerable": true,
+    "expected_answer": "She wears a red, green, black and white patterned garment and a large hoop earring; another child is partly visible at the left edge.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 48,
+        "printed_page": 46,
+        "evidence": "Photo evidence: an adult woman holding a young child is in the foreground; the woman wears a red, green, black and white patterned garment and a large hoop earring, and another child is partly visible at the left edge.",
+        "visual_region": "Full-page photograph, woman and children",
+        "visual_annotation": "Photo evidence: an adult woman holding a young child is in the foreground; the woman wears a red, green, black and white patterned garment and a large hoop earring, and another child is partly visible at the left edge.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-v03",
+    "split": "test",
+    "group": "visual",
+    "question": "What color are the cars beside the charging equipment in the transport photograph?",
+    "answerable": true,
+    "expected_answer": "Teal.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 70,
+        "printed_page": 68,
+        "evidence": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_region": "Full-page photograph, vehicles beside charging posts",
+        "visual_annotation": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-v04",
+    "split": "test",
+    "group": "visual",
+    "question": "What marks the central aisle in the factory photograph?",
+    "answerable": true,
+    "expected_answer": "Yellow floor lines mark the aisle between the production workstations.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a yellow-marked central aisle runs between factory workstations, with workers and machinery on both sides.",
+        "visual_region": "Full-page factory photograph, central aisle",
+        "visual_annotation": "Photo evidence: a yellow-marked central aisle runs between factory workstations, with workers and machinery on both sides.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-v05",
+    "split": "test",
+    "group": "visual",
+    "question": "What safety gear is visible on the foreground worker in the factory photograph?",
+    "answerable": true,
+    "expected_answer": "A red cap, face mask and white gloves; the worker wears a blue uniform.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_region": "Full-page factory photograph, foreground worker",
+        "visual_annotation": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_type": "photograph"
+      }
+    ]
+  },
+  {
+    "id": "t-c01",
+    "split": "test",
+    "group": "chart",
+    "question": "What potential does Figure 3.8 show for fixed offshore wind?",
+    "answerable": true,
+    "expected_answer": "101 GW.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.8. Viet Nam has a considerable renewable energy potential",
+        "visual_region": "Figure 3.8, fixed offshore wind bar",
+        "visual_annotation": "Visual inspection of Figure 3.8: fixed offshore wind potential is labelled 101 GW."
+      }
+    ]
+  },
+  {
+    "id": "t-c02",
+    "split": "test",
+    "group": "chart",
+    "question": "Approximately how many international tourists arrived in Viet Nam at the 2019 peak in Figure 1.4?",
+    "answerable": true,
+    "expected_answer": "About 18 million.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 24,
+        "printed_page": 22,
+        "evidence": "Figure 1.4. The number of foreign tourists to Viet Nam is approaching the pre-COVID 19 peak",
+        "visual_region": "Figure 1.4, 2019 bar",
+        "visual_annotation": "Visual inspection of Figure 1.4: international tourist arrivals peak at approximately 18 million in 2019 before the pandemic decline."
+      }
+    ]
+  },
+  {
+    "id": "t-c03",
+    "split": "test",
+    "group": "chart",
+    "question": "What old-age dependency ratio does Figure 1.15 show for Viet Nam in 2050?",
+    "answerable": true,
+    "expected_answer": "Approximately 32%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 37,
+        "printed_page": 35,
+        "evidence": "Figure 1.15. The elderly dependency is currently low, but will rise sharply by mid-century",
+        "visual_region": "Figure 1.15, Viet Nam 2050 bar",
+        "visual_annotation": "Visual inspection of Figure 1.15: Viet Nam's 2050 old-age dependency bar is approximately 32%."
+      }
+    ]
+  },
+  {
+    "id": "t-c04",
+    "split": "test",
+    "group": "chart",
+    "question": "In Figure 3.7, approximately how much coal did Viet Nam consume and produce in 2023?",
+    "answerable": true,
+    "expected_answer": "About 2.3 exajoules consumed and 1.1 exajoules produced.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.7. Viet Nam’s consumption of coal exceeds its production",
+        "visual_region": "Figure 3.7, 2023 endpoints",
+        "visual_annotation": "Visual inspection of Figure 3.7: in 2023, coal consumption is approximately 2.3 exajoules while coal production is approximately 1.1 exajoules."
+      }
+    ]
+  },
+  {
+    "id": "t-c05",
+    "split": "test",
+    "group": "chart",
+    "question": "What relative labour-productivity level is shown for foreign GVC firms in Figure 4.6?",
+    "answerable": true,
+    "expected_answer": "70% relative to domestic-market firms.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 102,
+        "printed_page": 100,
+        "evidence": "Figure 4.6. Participation in international trade and GVCs boost firms’ productivity and wages",
+        "visual_region": "Figure 4.6, foreign GVC labour-productivity bar",
+        "visual_annotation": "Visual inspection of Figure 4.6: labour productivity for foreign GVC firms is shown at 70% relative to domestic-market firms."
+      }
+    ]
+  },
+  {
+    "id": "t-m01",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Combine the report's typhoon account and its damage estimate: what GDP share was the estimated economic damage, and how many industrial parks were in the affected northern provinces?",
+    "answerable": true,
+    "expected_answer": "Damage was estimated at 0.7% of GDP; the affected northern provinces were home to 111 industrial parks.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 72,
+        "printed_page": 70,
+        "evidence": "In September 2024, Typhoon Yagi, one of the most powerful storms to hit Viet Nam in three decades, caused economic damage estimated at 0.7% of GDP",
+        "visual_region": "Section 3.1, Typhoon Yagi damage",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "The typhoon unleashed devastating floods and landslides across northern provinces that are home to 111 industrial parks and nearly 5 000 FDI enterprises",
+        "visual_region": "Section 1.1, Yagi impacts",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-m02",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "What was the 2024/25 diesel environmental tax in Table 3.2, and what change to diesel taxation does Table 3.3 recommend?",
+    "answerable": true,
+    "expected_answer": "1,000 VND per litre; bring the diesel tax in line with the gasoline tax.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Diesel fuel 1 000 VND/litre 2 000 VND/litre",
+        "visual_region": "Table 3.2, diesel row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 92,
+        "printed_page": 90,
+        "evidence": "Bring the diesel tax in line with the gasoline tax.",
+        "visual_region": "Table 3.3, horizontal mitigation recommendation",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-m03",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Compare the estimated GDP cost of reducing low-income workers’ social-security contributions in Table 1.3 with the current total contribution rates in Table 2.2. What are the reported values?",
+    "answerable": true,
+    "expected_answer": "The reduction is estimated to cost 1.0% of GDP; current total rates are 21.5% for employers and 10.5% for employees (32% combined).",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 38,
+        "printed_page": 36,
+        "evidence": "Reduce social security contributions for low-income earners (Chapter 2) -1.0",
+        "visual_region": "Table 1.3, deficit-increasing measures",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Total 21.5 10.5",
+        "visual_region": "Table 2.2, total contribution row",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-m04",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Using Table 2.2 and Figure 2.7, state the total employee contribution rate across the listed insurance schemes and the share of GDP generated by Viet Nam’s social-security contributions in 2022.",
+    "answerable": true,
+    "expected_answer": "Employees contribute 10.5% in total; social-security contributions generated about 5.4% of GDP in 2022.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Total 21.5 10.5",
+        "visual_region": "Table 2.2, total row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 60,
+        "printed_page": 58,
+        "evidence": "Figure 2.7. Social security contributions generate sizeable government revenues, 2022",
+        "visual_region": "Figure 2.7, Viet Nam bar",
+        "visual_annotation": "Visual inspection: Viet Nam’s red bar is approximately 5.4% of GDP, between the 5% and 6% gridlines."
+      }
+    ]
+  },
+  {
+    "id": "t-x01",
+    "split": "test",
+    "group": "text",
+    "question": "What was Viet Nam’s GDP growth rate in 2023, as stated in Section 1.1?",
+    "answerable": true,
+    "expected_answer": "5.1%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "growth to 5.1% in 2023",
+        "visual_region": "Section 1.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-x02",
+    "split": "test",
+    "group": "text",
+    "question": "What length of coastline makes Viet Nam particularly susceptible to sea-level rise and extreme weather?",
+    "answerable": true,
+    "expected_answer": "Approximately 3,260 km.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 72,
+        "printed_page": 70,
+        "evidence": "approximately 3,260 km of coastline",
+        "visual_region": "Section 3.1, climate exposure",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-x03",
+    "split": "test",
+    "group": "text",
+    "question": "What share of cumulative CO2 emissions has Viet Nam contributed, according to the report?",
+    "answerable": true,
+    "expected_answer": "0.3%.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 72,
+        "printed_page": 70,
+        "evidence": "has contributed to just 0.3% of cumulative CO2 emissions",
+        "visual_region": "Section 3.1, emissions contribution",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-x04",
+    "split": "test",
+    "group": "text",
+    "question": "How large were Viet Nam’s CO2 emissions in 2023, according to the cited estimate?",
+    "answerable": true,
+    "expected_answer": "373 million tonnes of CO2.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 74,
+        "printed_page": 72,
+        "evidence": "emissions, which are estimated to have reached 373 million tons of CO2 in 2023",
+        "visual_region": "Discussion following Figure 3.2",
+        "visual_annotation": null
+      }
+    ]
+  },
+  {
+    "id": "t-u01",
+    "split": "test",
+    "group": "text",
+    "question": "How many public fast-charging outlets were operating in Da Nang at the end of 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses transport decarbonisation but contains no city-level count of public charging outlets in Da Nang in 2025."
+  },
+  {
+    "id": "t-u02",
+    "split": "test",
+    "group": "text",
+    "question": "What share of Hanoi households had rooftop solar panels in 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses solar generation potential and national energy plans, but gives no 2025 household adoption share for Hanoi."
+  },
+  {
+    "id": "t-u03",
+    "split": "test",
+    "group": "text",
+    "question": "What was the average monthly wage of garment workers in Bac Ninh in 2024?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report contains wage comparisons and labour-market indicators, but not this occupation- and province-specific monthly wage."
+  },
+  {
+    "id": "t-u04",
+    "split": "test",
+    "group": "text",
+    "question": "How many Mekong Delta firms reported drought-related losses in 2024?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses climate risk and typhoon damage, but does not report a survey count of Mekong Delta firms with drought losses."
+  },
+  {
+    "id": "t-u05",
+    "split": "test",
+    "group": "text",
+    "question": "What proportion of public schools in Viet Nam had air conditioning in 2024?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses education outcomes and spending, but does not report school air-conditioning coverage."
+  },
+  {
+    "id": "t-u06",
+    "split": "test",
+    "group": "text",
+    "question": "How many electric two-wheelers were registered in Ho Chi Minh City in 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The report discusses transport emissions and cleaner vehicles but gives no city-level electric two-wheeler registration count for 2025."
+  }
+]

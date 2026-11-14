@@ -9,3 +9,23 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# OECD advanced challenge: retain source link, manifest and reproducible extraction code;
+# keep the downloaded source PDF and derived full-page visual crops local.
+advanced/data/*.pdf
+advanced/index/visual_pages/
+advanced/results/source-page-previews/
+advanced/results/*
+!advanced/results/retrieval-dev-embedding/
+!advanced/results/openai-dev-bonus-bm25-final3/
+!advanced/results/openai-dev-bonus-hybrid-final2/
+!advanced/results/openai-test-bonus-final2/
+advanced/results/retrieval-dev-embedding/*
+!advanced/results/retrieval-dev-embedding/summary.json
+!advanced/results/retrieval-dev-embedding/traces.json
+advanced/results/openai-dev-bonus-bm25-final3/*
+!advanced/results/openai-dev-bonus-bm25-final3/dev_traces.json
+advanced/results/openai-dev-bonus-hybrid-final2/*
+!advanced/results/openai-dev-bonus-hybrid-final2/dev_traces.json
+advanced/results/openai-test-bonus-final2/*
+!advanced/results/openai-test-bonus-final2/test_traces.json

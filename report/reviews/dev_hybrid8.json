@@ -1,0 +1,158 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Bản q10 đã làm rõ Equation (59); citation nêu toán tử mật độ.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [],
+    "reason": "Model nêu đúng m = ω = ℏ = 1 nhưng không gắn citation; agent từ chối.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đối chiếu câu trả lời với từng đoạn được trích dẫn.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "reason": "Nêu đúng trạng thái nhiệt, nhưng mở rộng các trạng thái ví dụ chung thành trường hợp bỏ thế mà các nguồn cuối không chứng minh.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "du01",
+    "citation_support": [],
+    "reason": "Từ chối sau khi tìm; không thấy phép đo sai số trong corpus lý thuyết.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "du02",
+    "citation_support": [],
+    "reason": "Từ chối sau khi tìm; corpus không mô tả thử nghiệm trên người.",
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "abstention_correct": true
+  }
+]

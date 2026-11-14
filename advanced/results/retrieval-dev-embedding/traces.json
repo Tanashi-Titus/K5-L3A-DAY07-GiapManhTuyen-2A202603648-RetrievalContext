@@ -1,0 +1,4900 @@
+[
+  {
+    "query_id": "d-t01",
+    "group": "table",
+    "answerable": true,
+    "method": "bm25",
+    "question": "In Table 1.1, what percentage of the labour force is projected to be unemployed in 2025?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Unemployment (% of labour force) 2.3 2.3 2.3 2.5 3.0",
+        "visual_region": "Table 1.1, unemployment row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-9a23d59877edef519dd2",
+        "pdf_page": 23,
+        "kind": "table_page",
+        "score": 110.39401730129833,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-fe409fad9c77e3f370a6",
+        "pdf_page": 8,
+        "kind": "visual_page",
+        "score": 26.255164430636448,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-1678afabeaba0b538cda",
+        "pdf_page": 23,
+        "kind": "page_text",
+        "score": 25.762702779428466,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 25.06573584193179,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-319dba40c16e92098424",
+        "pdf_page": 23,
+        "kind": "visual_page",
+        "score": 24.05474612387464,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-ff57465d9277e74213a0",
+        "pdf_page": 22,
+        "kind": "page_text",
+        "score": 22.350799478992965,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-9a23d59877edef519dd2",
+      "txt-1678afabeaba0b538cda",
+      "txt-8e63f9db7c3e2211bd00",
+      "vis-319dba40c16e92098424",
+      "txt-ff57465d9277e74213a0"
+    ],
+    "context_chars": 4308,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.06345340000007127
+  },
+  {
+    "query_id": "d-t01",
+    "group": "table",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "In Table 1.1, what percentage of the labour force is projected to be unemployed in 2025?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Unemployment (% of labour force) 2.3 2.3 2.3 2.5 3.0",
+        "visual_region": "Table 1.1, unemployment row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-319dba40c16e92098424",
+        "pdf_page": 23,
+        "kind": "visual_page",
+        "score": 0.7709820866584778,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "tbl-9a23d59877edef519dd2",
+        "pdf_page": 23,
+        "kind": "table_page",
+        "score": 0.7630813121795654,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "vis-805488b092c8726f3ad3",
+        "pdf_page": 59,
+        "kind": "visual_page",
+        "score": 0.7511532306671143,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-cc30344fbcf318b98e54",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.7491143941879272,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "tbl-d17cf60fab403e4570c5",
+        "pdf_page": 12,
+        "kind": "table_page",
+        "score": 0.7423089742660522,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-70d468f131d1da5a3062",
+        "pdf_page": 9,
+        "kind": "page_text",
+        "score": 0.7378032207489014,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-319dba40c16e92098424",
+      "tbl-9a23d59877edef519dd2",
+      "vis-805488b092c8726f3ad3",
+      "txt-cc30344fbcf318b98e54",
+      "tbl-d17cf60fab403e4570c5",
+      "txt-70d468f131d1da5a3062"
+    ],
+    "context_chars": 4815,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.7610575999997309
+  },
+  {
+    "query_id": "d-t01",
+    "group": "table",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "In Table 1.1, what percentage of the labour force is projected to be unemployed in 2025?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Unemployment (% of labour force) 2.3 2.3 2.3 2.5 3.0",
+        "visual_region": "Table 1.1, unemployment row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-9a23d59877edef519dd2",
+        "pdf_page": 23,
+        "kind": "table_page",
+        "score": 0.03252247488101534,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-319dba40c16e92098424",
+        "pdf_page": 23,
+        "kind": "visual_page",
+        "score": 0.03177805800756621,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-fe409fad9c77e3f370a6",
+        "pdf_page": 8,
+        "kind": "visual_page",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-1678afabeaba0b538cda",
+        "pdf_page": 23,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-805488b092c8726f3ad3",
+        "pdf_page": 59,
+        "kind": "visual_page",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-9a23d59877edef519dd2",
+      "vis-319dba40c16e92098424",
+      "txt-1678afabeaba0b538cda",
+      "vis-805488b092c8726f3ad3",
+      "txt-8e63f9db7c3e2211bd00"
+    ],
+    "context_chars": 3799,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.24166779999995924
+  },
+  {
+    "query_id": "d-t02",
+    "group": "table",
+    "answerable": true,
+    "method": "bm25",
+    "question": "In Table 2.2, what are the employer and employee health-insurance contribution rates?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Health Insurance 3.0 1.5",
+        "visual_region": "Table 2.2, Health Insurance row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-c06b387ee7f08f6f452f",
+        "pdf_page": 59,
+        "kind": "table_page",
+        "score": 134.42404051771123,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-950b73515151dfe1da8b",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 51.20773741424562,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-805488b092c8726f3ad3",
+        "pdf_page": 59,
+        "kind": "visual_page",
+        "score": 38.725765461123565,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 29.456255483562384,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-fe409fad9c77e3f370a6",
+        "pdf_page": 8,
+        "kind": "visual_page",
+        "score": 28.444486644639206,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-6ad00ee3f82c6296b8e0",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 25.37401291461139,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-c06b387ee7f08f6f452f",
+      "txt-950b73515151dfe1da8b",
+      "vis-805488b092c8726f3ad3",
+      "txt-8e63f9db7c3e2211bd00",
+      "txt-6ad00ee3f82c6296b8e0"
+    ],
+    "context_chars": 4315,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.05062580000048911
+  },
+  {
+    "query_id": "d-t02",
+    "group": "table",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "In Table 2.2, what are the employer and employee health-insurance contribution rates?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Health Insurance 3.0 1.5",
+        "visual_region": "Table 2.2, Health Insurance row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-805488b092c8726f3ad3",
+        "pdf_page": 59,
+        "kind": "visual_page",
+        "score": 0.8127585649490356,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "tbl-c06b387ee7f08f6f452f",
+        "pdf_page": 59,
+        "kind": "table_page",
+        "score": 0.782575249671936,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-950b73515151dfe1da8b",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 0.7223260402679443,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-6ddd414e530e00b3c5a0",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 0.7215133309364319,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "txt-20d08f3063ef6255561d",
+        "pdf_page": 61,
+        "kind": "page_text",
+        "score": 0.7142278552055359,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-f5475092b6af5dc42dcd",
+        "pdf_page": 63,
+        "kind": "page_text",
+        "score": 0.7067444324493408,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-805488b092c8726f3ad3",
+      "tbl-c06b387ee7f08f6f452f",
+      "txt-950b73515151dfe1da8b",
+      "txt-6ddd414e530e00b3c5a0",
+      "txt-20d08f3063ef6255561d",
+      "txt-f5475092b6af5dc42dcd"
+    ],
+    "context_chars": 4180,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.1899051000000327
+  },
+  {
+    "query_id": "d-t02",
+    "group": "table",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "In Table 2.2, what are the employer and employee health-insurance contribution rates?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 59,
+        "printed_page": 57,
+        "evidence": "Health Insurance 3.0 1.5",
+        "visual_region": "Table 2.2, Health Insurance row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-c06b387ee7f08f6f452f",
+        "pdf_page": 59,
+        "kind": "table_page",
+        "score": 0.03252247488101534,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-805488b092c8726f3ad3",
+        "pdf_page": 59,
+        "kind": "visual_page",
+        "score": 0.032266458495966696,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-950b73515151dfe1da8b",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 0.03200204813108039,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-6ddd414e530e00b3c5a0",
+        "pdf_page": 59,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-20d08f3063ef6255561d",
+        "pdf_page": 61,
+        "kind": "page_text",
+        "score": 0.015384615384615385,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-c06b387ee7f08f6f452f",
+      "vis-805488b092c8726f3ad3",
+      "txt-950b73515151dfe1da8b",
+      "txt-6ddd414e530e00b3c5a0",
+      "txt-8e63f9db7c3e2211bd00"
+    ],
+    "context_chars": 4013,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1,
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.24925230000008014
+  },
+  {
+    "query_id": "d-t03",
+    "group": "table",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What was the gasoline environmental protection tax rate in 2024/25?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre 4 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-1be5bfe750d12b5b3c21",
+        "pdf_page": 77,
+        "kind": "table_page",
+        "score": 22.808667671013183,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 21.763682859224733,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-bfc5678b9273391ab506",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 18.055577053673545,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 16.3970400647709,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "txt-a8a26390e6afae5cb7ca",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 14.834216223105333,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-3c186f98e998436c5020",
+        "pdf_page": 76,
+        "kind": "page_text",
+        "score": 14.688537455707184,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-1be5bfe750d12b5b3c21",
+      "txt-38266596a9345e476abe",
+      "txt-bfc5678b9273391ab506",
+      "txt-16aff8b651da04148260",
+      "txt-a8a26390e6afae5cb7ca",
+      "txt-3c186f98e998436c5020"
+    ],
+    "context_chars": 5070,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.02101550000043062
+  },
+  {
+    "query_id": "d-t03",
+    "group": "table",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What was the gasoline environmental protection tax rate in 2024/25?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre 4 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-a8a26390e6afae5cb7ca",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7884451150894165,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-0669fd603ed2dcd1424f",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7869056463241577,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7827014923095703,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7807080745697021,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-28a4dadce279de9e7395",
+        "pdf_page": 77,
+        "kind": "visual_page",
+        "score": 0.7568387985229492,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-3c186f98e998436c5020",
+        "pdf_page": 76,
+        "kind": "page_text",
+        "score": 0.7466843128204346,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-a8a26390e6afae5cb7ca",
+      "txt-0669fd603ed2dcd1424f",
+      "txt-16aff8b651da04148260",
+      "txt-38266596a9345e476abe",
+      "vis-28a4dadce279de9e7395",
+      "txt-3c186f98e998436c5020"
+    ],
+    "context_chars": 4006,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        3
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.21460920000026817
+  },
+  {
+    "query_id": "d-t03",
+    "group": "table",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What was the gasoline environmental protection tax rate in 2024/25?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre 4 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-a8a26390e6afae5cb7ca",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.03177805800756621,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.031754032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.03149801587301587,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-3c186f98e998436c5020",
+        "pdf_page": 76,
+        "kind": "page_text",
+        "score": 0.030303030303030304,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "tbl-1be5bfe750d12b5b3c21",
+        "pdf_page": 77,
+        "kind": "table_page",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-0669fd603ed2dcd1424f",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-a8a26390e6afae5cb7ca",
+      "txt-38266596a9345e476abe",
+      "txt-16aff8b651da04148260",
+      "txt-3c186f98e998436c5020",
+      "tbl-1be5bfe750d12b5b3c21",
+      "txt-0669fd603ed2dcd1424f"
+    ],
+    "context_chars": 4086,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        3
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2276388999998744
+  },
+  {
+    "query_id": "d-c01",
+    "group": "chart",
+    "answerable": true,
+    "method": "bm25",
+    "question": "According to Figure 3.8, what is the estimated potential for solar rooftop power?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.8. Viet Nam has a considerable renewable energy potential",
+        "visual_region": "Figure 3.8, Solar rooftop bar",
+        "visual_annotation": "Visual inspection of Figure 3.8: Solar rooftop is labelled 147 GW."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-8442232da107c659b2dc",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 78.93662258883495,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-note-23fde390c3af9fa48ad8",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 68.68455070934601,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-1de7aeddb86917484488",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 53.6439067012678,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4aa3d74a3ef77aafd378",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 40.61014708381427,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-1205d58bb7f1df79b22f",
+        "pdf_page": 82,
+        "kind": "visual_page",
+        "score": 27.000275536765937,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "txt-8cb45a56e0f7c8bea2dc",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 25.94955518709304,
+        "evidence_indices": [
+          0
+        ]
+      }
+    ],
+    "context_ids": [
+      "vis-note-8442232da107c659b2dc",
+      "vis-note-23fde390c3af9fa48ad8",
+      "vis-note-1de7aeddb86917484488",
+      "txt-4aa3d74a3ef77aafd378",
+      "vis-1205d58bb7f1df79b22f",
+      "txt-8cb45a56e0f7c8bea2dc"
+    ],
+    "context_chars": 2335,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        5,
+        6
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.05151389999991807
+  },
+  {
+    "query_id": "d-c01",
+    "group": "chart",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "According to Figure 3.8, what is the estimated potential for solar rooftop power?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.8. Viet Nam has a considerable renewable energy potential",
+        "visual_region": "Figure 3.8, Solar rooftop bar",
+        "visual_annotation": "Visual inspection of Figure 3.8: Solar rooftop is labelled 147 GW."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-8442232da107c659b2dc",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 0.8077489137649536,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-1205d58bb7f1df79b22f",
+        "pdf_page": 82,
+        "kind": "visual_page",
+        "score": 0.7471480369567871,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-8cb45a56e0f7c8bea2dc",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 0.743323564529419,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-eb8babf28ac69c7c6efb",
+        "pdf_page": 84,
+        "kind": "page_text",
+        "score": 0.7325938940048218,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-2509f73b13d23da862c9",
+        "pdf_page": 84,
+        "kind": "visual_page",
+        "score": 0.7317218780517578,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-note-23fde390c3af9fa48ad8",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 0.7301742434501648,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-8442232da107c659b2dc",
+      "vis-1205d58bb7f1df79b22f",
+      "txt-8cb45a56e0f7c8bea2dc",
+      "txt-eb8babf28ac69c7c6efb",
+      "vis-2509f73b13d23da862c9",
+      "vis-note-23fde390c3af9fa48ad8"
+    ],
+    "context_chars": 2237,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        3
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.19509849999940343
+  },
+  {
+    "query_id": "d-c01",
+    "group": "chart",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "According to Figure 3.8, what is the estimated potential for solar rooftop power?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 82,
+        "printed_page": 80,
+        "evidence": "Figure 3.8. Viet Nam has a considerable renewable energy potential",
+        "visual_region": "Figure 3.8, Solar rooftop bar",
+        "visual_annotation": "Visual inspection of Figure 3.8: Solar rooftop is labelled 147 GW."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-8442232da107c659b2dc",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-1205d58bb7f1df79b22f",
+        "pdf_page": 82,
+        "kind": "visual_page",
+        "score": 0.0315136476426799,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-23fde390c3af9fa48ad8",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 0.03128054740957967,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-8cb45a56e0f7c8bea2dc",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 0.031024531024531024,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "vis-note-1de7aeddb86917484488",
+        "pdf_page": 82,
+        "kind": "human_visual_note",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-4aa3d74a3ef77aafd378",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-8442232da107c659b2dc",
+      "vis-1205d58bb7f1df79b22f",
+      "vis-note-23fde390c3af9fa48ad8",
+      "txt-8cb45a56e0f7c8bea2dc",
+      "vis-note-1de7aeddb86917484488",
+      "txt-4aa3d74a3ef77aafd378"
+    ],
+    "context_chars": 2335,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.24790130000019417
+  },
+  {
+    "query_id": "d-c02",
+    "group": "chart",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What share of global semiconductor export value did Viet Nam have in Figure 4.19?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Figure 4.19. Viet Nam is the 10th-largest global exporter of semiconductors",
+        "visual_region": "Figure 4.19, Viet Nam slice",
+        "visual_annotation": "Visual inspection of Figure 4.19: Viet Nam is labelled 2%; the figure concerns 2021 global semiconductor exports."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-24bff61b35c486952c87",
+        "pdf_page": 118,
+        "kind": "human_visual_note",
+        "score": 80.1744568102554,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 37.45200530782487,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 35.93693726220818,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-7c77f136471b8c304580",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 35.521201142918386,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-6ccb9d6f4f8b67dc9bc3",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 33.71474187399379,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "vis-fe409fad9c77e3f370a6",
+        "pdf_page": 8,
+        "kind": "visual_page",
+        "score": 30.87188465749345,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-24bff61b35c486952c87",
+      "vis-1a6b56953aaf10b90078",
+      "txt-c15dd72f3301e1acc5db",
+      "txt-7c77f136471b8c304580",
+      "txt-6ccb9d6f4f8b67dc9bc3"
+    ],
+    "context_chars": 3572,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        5
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.049690300000293064
+  },
+  {
+    "query_id": "d-c02",
+    "group": "chart",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What share of global semiconductor export value did Viet Nam have in Figure 4.19?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Figure 4.19. Viet Nam is the 10th-largest global exporter of semiconductors",
+        "visual_region": "Figure 4.19, Viet Nam slice",
+        "visual_annotation": "Visual inspection of Figure 4.19: Viet Nam is labelled 2%; the figure concerns 2021 global semiconductor exports."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-24bff61b35c486952c87",
+        "pdf_page": 118,
+        "kind": "human_visual_note",
+        "score": 0.8891186714172363,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 0.8878138065338135,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-6ccb9d6f4f8b67dc9bc3",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.8801743984222412,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.8532892465591431,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-c35cfc823c5bea9a97a2",
+        "pdf_page": 16,
+        "kind": "visual_page",
+        "score": 0.8018389940261841,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-7c77f136471b8c304580",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.8015021085739136,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-24bff61b35c486952c87",
+      "vis-1a6b56953aaf10b90078",
+      "txt-6ccb9d6f4f8b67dc9bc3",
+      "txt-c15dd72f3301e1acc5db",
+      "vis-c35cfc823c5bea9a97a2",
+      "txt-7c77f136471b8c304580"
+    ],
+    "context_chars": 3707,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        3
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2072000999996817
+  },
+  {
+    "query_id": "d-c02",
+    "group": "chart",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What share of global semiconductor export value did Viet Nam have in Figure 4.19?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Figure 4.19. Viet Nam is the 10th-largest global exporter of semiconductors",
+        "visual_region": "Figure 4.19, Viet Nam slice",
+        "visual_annotation": "Visual inspection of Figure 4.19: Viet Nam is labelled 2%; the figure concerns 2021 global semiconductor exports."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-24bff61b35c486952c87",
+        "pdf_page": 118,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 0.03225806451612903,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.03149801587301587,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-6ccb9d6f4f8b67dc9bc3",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.03125763125763126,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "txt-7c77f136471b8c304580",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.030776515151515152,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-c35cfc823c5bea9a97a2",
+        "pdf_page": 16,
+        "kind": "visual_page",
+        "score": 0.015384615384615385,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-24bff61b35c486952c87",
+      "vis-1a6b56953aaf10b90078",
+      "txt-c15dd72f3301e1acc5db",
+      "txt-6ccb9d6f4f8b67dc9bc3",
+      "txt-7c77f136471b8c304580",
+      "vis-c35cfc823c5bea9a97a2"
+    ],
+    "context_chars": 3707,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.21214680000048247
+  },
+  {
+    "query_id": "d-c03",
+    "group": "chart",
+    "answerable": true,
+    "method": "bm25",
+    "question": "Which economy has the highest old-age dependency ratio shown for 2050 in Figure 1.15?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 37,
+        "printed_page": 35,
+        "evidence": "Figure 1.15. The elderly dependency is currently low, but will rise sharply by mid-century",
+        "visual_region": "Figure 1.15, OECD 2050 bar",
+        "visual_annotation": "Visual inspection of Figure 1.15: among the 2050 bars, OECD is highest, just under 50% (approximately 48%)."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-e362bd39fa0371eae33a",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 86.71721793457293,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-note-9e457d77355f9b35b7fb",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 76.21351792985584,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-c5c318083f81e5187b5e",
+        "pdf_page": 37,
+        "kind": "page_text",
+        "score": 45.55432082471361,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-02a4b0a1fd7c8052bc1a",
+        "pdf_page": 36,
+        "kind": "page_text",
+        "score": 30.446496979695233,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-c716b886b481beefa62d",
+        "pdf_page": 37,
+        "kind": "visual_page",
+        "score": 29.890879529062204,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "txt-ee6017bdf9d699615b2c",
+        "pdf_page": 7,
+        "kind": "page_text",
+        "score": 27.90419465309528,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-e362bd39fa0371eae33a",
+      "vis-note-9e457d77355f9b35b7fb",
+      "txt-c5c318083f81e5187b5e",
+      "txt-02a4b0a1fd7c8052bc1a",
+      "vis-c716b886b481beefa62d",
+      "txt-ee6017bdf9d699615b2c"
+    ],
+    "context_chars": 3476,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        3,
+        5
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.048961799999233335
+  },
+  {
+    "query_id": "d-c03",
+    "group": "chart",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "Which economy has the highest old-age dependency ratio shown for 2050 in Figure 1.15?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 37,
+        "printed_page": 35,
+        "evidence": "Figure 1.15. The elderly dependency is currently low, but will rise sharply by mid-century",
+        "visual_region": "Figure 1.15, OECD 2050 bar",
+        "visual_annotation": "Visual inspection of Figure 1.15: among the 2050 bars, OECD is highest, just under 50% (approximately 48%)."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-e362bd39fa0371eae33a",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 0.8408920168876648,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-c5c318083f81e5187b5e",
+        "pdf_page": 37,
+        "kind": "page_text",
+        "score": 0.8360870480537415,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-9e457d77355f9b35b7fb",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 0.8146505355834961,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-c716b886b481beefa62d",
+        "pdf_page": 37,
+        "kind": "visual_page",
+        "score": 0.7836679220199585,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "txt-02a4b0a1fd7c8052bc1a",
+        "pdf_page": 36,
+        "kind": "page_text",
+        "score": 0.7797942161560059,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-3c5794944334351de3ba",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 0.7725735902786255,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-e362bd39fa0371eae33a",
+      "txt-c5c318083f81e5187b5e",
+      "vis-note-9e457d77355f9b35b7fb",
+      "vis-c716b886b481beefa62d",
+      "txt-02a4b0a1fd7c8052bc1a",
+      "txt-3c5794944334351de3ba"
+    ],
+    "context_chars": 2591,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.1763490000003003
+  },
+  {
+    "query_id": "d-c03",
+    "group": "chart",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "Which economy has the highest old-age dependency ratio shown for 2050 in Figure 1.15?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 37,
+        "printed_page": 35,
+        "evidence": "Figure 1.15. The elderly dependency is currently low, but will rise sharply by mid-century",
+        "visual_region": "Figure 1.15, OECD 2050 bar",
+        "visual_annotation": "Visual inspection of Figure 1.15: among the 2050 bars, OECD is highest, just under 50% (approximately 48%)."
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-e362bd39fa0371eae33a",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-c5c318083f81e5187b5e",
+        "pdf_page": 37,
+        "kind": "page_text",
+        "score": 0.03200204813108039,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-9e457d77355f9b35b7fb",
+        "pdf_page": 37,
+        "kind": "human_visual_note",
+        "score": 0.03200204813108039,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-02a4b0a1fd7c8052bc1a",
+        "pdf_page": 36,
+        "kind": "page_text",
+        "score": 0.031009615384615385,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-c716b886b481beefa62d",
+        "pdf_page": 37,
+        "kind": "visual_page",
+        "score": 0.031009615384615385,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "txt-3c5794944334351de3ba",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 0.015151515151515152,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-e362bd39fa0371eae33a",
+      "txt-c5c318083f81e5187b5e",
+      "vis-note-9e457d77355f9b35b7fb",
+      "txt-02a4b0a1fd7c8052bc1a",
+      "vis-c716b886b481beefa62d",
+      "txt-3c5794944334351de3ba"
+    ],
+    "context_chars": 2591,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2,
+        5
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2717438999998194
+  },
+  {
+    "query_id": "d-m01",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "bm25",
+    "question": "Combine Table 3.2 with the nearby discussion: what was the 2024/25 gasoline tax rate, and how did the 2023 tax cut affect receipts?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "This is estimated to have reduced tax collection from 0.54% to 0.41% of GDP.",
+        "visual_region": "Text immediately above Table 3.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-1be5bfe750d12b5b3c21",
+        "pdf_page": 77,
+        "kind": "table_page",
+        "score": 128.88470418010078,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-b69ce48a37b4bcf44901",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 35.14283209812436,
+        "evidence_indices": [
+          1
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 33.7926803424778,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-28a4dadce279de9e7395",
+        "pdf_page": 77,
+        "kind": "visual_page",
+        "score": 30.635707660959998,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 30.189450201067977,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "txt-009ca7816bbaa88f1e27",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 28.248686175669967,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-1be5bfe750d12b5b3c21",
+      "txt-b69ce48a37b4bcf44901",
+      "txt-38266596a9345e476abe",
+      "vis-28a4dadce279de9e7395",
+      "txt-16aff8b651da04148260",
+      "txt-009ca7816bbaa88f1e27"
+    ],
+    "context_chars": 4319,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        5
+      ],
+      [
+        2
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.05748120000043855
+  },
+  {
+    "query_id": "d-m01",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "Combine Table 3.2 with the nearby discussion: what was the 2024/25 gasoline tax rate, and how did the 2023 tax cut affect receipts?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "This is estimated to have reduced tax collection from 0.54% to 0.41% of GDP.",
+        "visual_region": "Text immediately above Table 3.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7551345825195312,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "tbl-1be5bfe750d12b5b3c21",
+        "pdf_page": 77,
+        "kind": "table_page",
+        "score": 0.7402851581573486,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7357783317565918,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0669fd603ed2dcd1424f",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7347419857978821,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-28a4dadce279de9e7395",
+        "pdf_page": 77,
+        "kind": "visual_page",
+        "score": 0.7320059537887573,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-b69ce48a37b4bcf44901",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.7314630150794983,
+        "evidence_indices": [
+          1
+        ]
+      }
+    ],
+    "context_ids": [
+      "txt-16aff8b651da04148260",
+      "tbl-1be5bfe750d12b5b3c21",
+      "txt-38266596a9345e476abe",
+      "txt-0669fd603ed2dcd1424f",
+      "vis-28a4dadce279de9e7395",
+      "txt-b69ce48a37b4bcf44901"
+    ],
+    "context_chars": 3775,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ],
+      [
+        6
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.2689578999998048
+  },
+  {
+    "query_id": "d-m01",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "Combine Table 3.2 with the nearby discussion: what was the 2024/25 gasoline tax rate, and how did the 2023 tax cut affect receipts?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "Gasoline, excluding ethanol 2 000 VND/litre",
+        "visual_region": "Table 3.2, gasoline row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 77,
+        "printed_page": 75,
+        "evidence": "This is estimated to have reduced tax collection from 0.54% to 0.41% of GDP.",
+        "visual_region": "Text immediately above Table 3.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-1be5bfe750d12b5b3c21",
+        "pdf_page": 77,
+        "kind": "table_page",
+        "score": 0.03252247488101534,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-16aff8b651da04148260",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.03177805800756621,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-38266596a9345e476abe",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.031746031746031744,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-b69ce48a37b4bcf44901",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.03128054740957967,
+        "evidence_indices": [
+          1
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "vis-28a4dadce279de9e7395",
+        "pdf_page": 77,
+        "kind": "visual_page",
+        "score": 0.031009615384615385,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-0669fd603ed2dcd1424f",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-1be5bfe750d12b5b3c21",
+      "txt-16aff8b651da04148260",
+      "txt-38266596a9345e476abe",
+      "txt-b69ce48a37b4bcf44901",
+      "vis-28a4dadce279de9e7395",
+      "txt-0669fd603ed2dcd1424f"
+    ],
+    "context_chars": 3775,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.34734819999994215
+  },
+  {
+    "query_id": "d-m02",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What 2024 GDP growth rate does Table 1.1 report, and what GDP growth target does the Section 1.1 discussion compare it with? Give both rates with the % sign.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Real GDP 8.5 5.1 7.1",
+        "visual_region": "Table 1.1, Real GDP row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "In 2024, GDP increased by 7.1%, surpassing the government’s 6.5% target.",
+        "visual_region": "Section 1.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "tbl-9a23d59877edef519dd2",
+        "pdf_page": 23,
+        "kind": "table_page",
+        "score": 118.377711985364,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-94dd364df209d4309585",
+        "pdf_page": 20,
+        "kind": "page_text",
+        "score": 40.85058984911876,
+        "evidence_indices": [
+          1
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 39.870814780603624,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0cbc0b900f3b3aee562a",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 38.139065484403844,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-c870d77ab313e56f4c84",
+        "pdf_page": 103,
+        "kind": "page_text",
+        "score": 35.548759204629725,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "tbl-0356f65b418988458c70",
+        "pdf_page": 45,
+        "kind": "table_page",
+        "score": 34.421782335380996,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "tbl-9a23d59877edef519dd2",
+      "txt-94dd364df209d4309585",
+      "txt-8e63f9db7c3e2211bd00",
+      "txt-0cbc0b900f3b3aee562a"
+    ],
+    "context_chars": 4802,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.24257099999977072
+  },
+  {
+    "query_id": "d-m02",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What 2024 GDP growth rate does Table 1.1 report, and what GDP growth target does the Section 1.1 discussion compare it with? Give both rates with the % sign.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Real GDP 8.5 5.1 7.1",
+        "visual_region": "Table 1.1, Real GDP row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "In 2024, GDP increased by 7.1%, surpassing the government’s 6.5% target.",
+        "visual_region": "Section 1.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-31a60c482d86b5f0d9ee",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.7635079026222229,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "vis-319dba40c16e92098424",
+        "pdf_page": 23,
+        "kind": "visual_page",
+        "score": 0.7582530975341797,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "tbl-d17cf60fab403e4570c5",
+        "pdf_page": 12,
+        "kind": "table_page",
+        "score": 0.7537521123886108,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0cbc0b900f3b3aee562a",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.7471626996994019,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-c5655f0d5f3864fbb129",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.7422021627426147,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.7400668859481812,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-31a60c482d86b5f0d9ee",
+      "vis-319dba40c16e92098424",
+      "tbl-d17cf60fab403e4570c5",
+      "txt-0cbc0b900f3b3aee562a",
+      "txt-c5655f0d5f3864fbb129",
+      "txt-8e63f9db7c3e2211bd00"
+    ],
+    "context_chars": 4284,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [
+      [],
+      []
+    ],
+    "context_coverage_by_gold": [
+      false,
+      false
+    ],
+    "elapsed_seconds": 0.9682331000003614
+  },
+  {
+    "query_id": "d-m02",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What 2024 GDP growth rate does Table 1.1 report, and what GDP growth target does the Section 1.1 discussion compare it with? Give both rates with the % sign.",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 23,
+        "printed_page": 21,
+        "evidence": "Real GDP 8.5 5.1 7.1",
+        "visual_region": "Table 1.1, Real GDP row",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 20,
+        "printed_page": 18,
+        "evidence": "In 2024, GDP increased by 7.1%, surpassing the government’s 6.5% target.",
+        "visual_region": "Section 1.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-0cbc0b900f3b3aee562a",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.03125,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-8e63f9db7c3e2211bd00",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 0.031024531024531024,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "tbl-9a23d59877edef519dd2",
+        "pdf_page": 23,
+        "kind": "table_page",
+        "score": 0.01639344262295082,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "txt-31a60c482d86b5f0d9ee",
+        "pdf_page": 12,
+        "kind": "page_text",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-94dd364df209d4309585",
+        "pdf_page": 20,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": [
+          1
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "vis-319dba40c16e92098424",
+        "pdf_page": 23,
+        "kind": "visual_page",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-0cbc0b900f3b3aee562a",
+      "txt-8e63f9db7c3e2211bd00",
+      "tbl-9a23d59877edef519dd2",
+      "txt-31a60c482d86b5f0d9ee",
+      "txt-94dd364df209d4309585",
+      "vis-319dba40c16e92098424"
+    ],
+    "context_chars": 5085,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        3
+      ],
+      [
+        5
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.5089540999997553
+  },
+  {
+    "query_id": "d-m03",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "bm25",
+    "question": "How much did Viet Nam’s combined solar and wind power capacity increase from 2020 to 2023, and what total clean-source capacity is planned for 2030?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "solar and wind power capacity, which increased from 17 GW in 2020 to 23 GW in 2023",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "increase from about 45 GW in 2023 to 80 GW in 2030",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7e4f6c1c266c4756f53a",
+        "pdf_page": 83,
+        "kind": "page_text",
+        "score": 41.08345625842949,
+        "evidence_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-4f12d4d7bc9b1e2db22b",
+        "pdf_page": 80,
+        "kind": "page_text",
+        "score": 28.070418067806525,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-4aa3d74a3ef77aafd378",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 27.549291508440763,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4e64f13b1bf46f395780",
+        "pdf_page": 85,
+        "kind": "page_text",
+        "score": 25.210044052576436,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-348285d2238e2c861f17",
+        "pdf_page": 87,
+        "kind": "page_text",
+        "score": 22.80782175784964,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-7d952df366a6aff77378",
+        "pdf_page": 72,
+        "kind": "page_text",
+        "score": 21.24545593372107,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7e4f6c1c266c4756f53a",
+      "txt-4f12d4d7bc9b1e2db22b",
+      "txt-4aa3d74a3ef77aafd378",
+      "txt-4e64f13b1bf46f395780",
+      "txt-348285d2238e2c861f17"
+    ],
+    "context_chars": 5000,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.03607610000017303
+  },
+  {
+    "query_id": "d-m03",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "How much did Viet Nam’s combined solar and wind power capacity increase from 2020 to 2023, and what total clean-source capacity is planned for 2030?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "solar and wind power capacity, which increased from 17 GW in 2020 to 23 GW in 2023",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "increase from about 45 GW in 2023 to 80 GW in 2030",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7e4f6c1c266c4756f53a",
+        "pdf_page": 83,
+        "kind": "page_text",
+        "score": 0.837620735168457,
+        "evidence_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-eb8babf28ac69c7c6efb",
+        "pdf_page": 84,
+        "kind": "page_text",
+        "score": 0.7624026536941528,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-348285d2238e2c861f17",
+        "pdf_page": 87,
+        "kind": "page_text",
+        "score": 0.7441788911819458,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4e64f13b1bf46f395780",
+        "pdf_page": 85,
+        "kind": "page_text",
+        "score": 0.7417721748352051,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-4f12d4d7bc9b1e2db22b",
+        "pdf_page": 80,
+        "kind": "page_text",
+        "score": 0.7411448955535889,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-8cb45a56e0f7c8bea2dc",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 0.7393109798431396,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7e4f6c1c266c4756f53a",
+      "txt-eb8babf28ac69c7c6efb",
+      "txt-348285d2238e2c861f17",
+      "txt-4e64f13b1bf46f395780",
+      "txt-4f12d4d7bc9b1e2db22b"
+    ],
+    "context_chars": 4967,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.47119480000037584
+  },
+  {
+    "query_id": "d-m03",
+    "group": "multi_hop",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "How much did Viet Nam’s combined solar and wind power capacity increase from 2020 to 2023, and what total clean-source capacity is planned for 2030?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "solar and wind power capacity, which increased from 17 GW in 2020 to 23 GW in 2023",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      },
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 83,
+        "printed_page": 81,
+        "evidence": "increase from about 45 GW in 2023 to 80 GW in 2030",
+        "visual_region": "Chapter 3 text, printed page 81",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7e4f6c1c266c4756f53a",
+        "pdf_page": 83,
+        "kind": "page_text",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-4f12d4d7bc9b1e2db22b",
+        "pdf_page": 80,
+        "kind": "page_text",
+        "score": 0.0315136476426799,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-348285d2238e2c861f17",
+        "pdf_page": 87,
+        "kind": "page_text",
+        "score": 0.03125763125763126,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4e64f13b1bf46f395780",
+        "pdf_page": 85,
+        "kind": "page_text",
+        "score": 0.03125,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-eb8babf28ac69c7c6efb",
+        "pdf_page": 84,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-4aa3d74a3ef77aafd378",
+        "pdf_page": 82,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7e4f6c1c266c4756f53a",
+      "txt-4f12d4d7bc9b1e2db22b",
+      "txt-348285d2238e2c861f17",
+      "txt-4e64f13b1bf46f395780",
+      "txt-eb8babf28ac69c7c6efb"
+    ],
+    "context_chars": 4967,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true,
+      true
+    ],
+    "elapsed_seconds": 0.329140599999846
+  },
+  {
+    "query_id": "d-x01",
+    "group": "text",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What was the annual average rate of real GDP growth in Viet Nam from 1990 to 2023?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 98,
+        "printed_page": 96,
+        "evidence": "Real GDP rose at a 6.7% annual average rate between 1990 and 2023",
+        "visual_region": "Section 4.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-e1cb77644c25dc9b7a00",
+        "pdf_page": 98,
+        "kind": "page_text",
+        "score": 24.605700416922634,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-af8c26cc0b51078b06e0",
+        "pdf_page": 102,
+        "kind": "page_text",
+        "score": 19.988344282338478,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-cd1fa5ed08e4c217d2a4",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 19.110019193398692,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-9781e576122371a7e9fb",
+        "pdf_page": 99,
+        "kind": "page_text",
+        "score": 18.733835005791924,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-5f66b422a2fefd2125e9",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 17.929529283190355,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-1013314665eb85151db0",
+        "pdf_page": 39,
+        "kind": "page_text",
+        "score": 17.83768925193776,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-e1cb77644c25dc9b7a00",
+      "txt-af8c26cc0b51078b06e0",
+      "txt-cd1fa5ed08e4c217d2a4",
+      "txt-9781e576122371a7e9fb",
+      "txt-5f66b422a2fefd2125e9"
+    ],
+    "context_chars": 5018,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.0346479999998337
+  },
+  {
+    "query_id": "d-x01",
+    "group": "text",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What was the annual average rate of real GDP growth in Viet Nam from 1990 to 2023?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 98,
+        "printed_page": 96,
+        "evidence": "Real GDP rose at a 6.7% annual average rate between 1990 and 2023",
+        "visual_region": "Section 4.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-e1cb77644c25dc9b7a00",
+        "pdf_page": 98,
+        "kind": "page_text",
+        "score": 0.8142004013061523,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-94dd364df209d4309585",
+        "pdf_page": 20,
+        "kind": "page_text",
+        "score": 0.7699999809265137,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-cd1fa5ed08e4c217d2a4",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 0.7698084115982056,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4239c6f4caad58554543",
+        "pdf_page": 11,
+        "kind": "page_text",
+        "score": 0.7566244006156921,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-e726f402ce0fbcd90e76",
+        "pdf_page": 21,
+        "kind": "page_text",
+        "score": 0.7560437321662903,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-742d5b4903327d9fc691",
+        "pdf_page": 103,
+        "kind": "page_text",
+        "score": 0.7549426555633545,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-e1cb77644c25dc9b7a00",
+      "txt-94dd364df209d4309585",
+      "txt-cd1fa5ed08e4c217d2a4",
+      "txt-4239c6f4caad58554543",
+      "txt-e726f402ce0fbcd90e76",
+      "txt-742d5b4903327d9fc691"
+    ],
+    "context_chars": 5200,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2514846000003672
+  },
+  {
+    "query_id": "d-x01",
+    "group": "text",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What was the annual average rate of real GDP growth in Viet Nam from 1990 to 2023?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 98,
+        "printed_page": 96,
+        "evidence": "Real GDP rose at a 6.7% annual average rate between 1990 and 2023",
+        "visual_region": "Section 4.1 opening paragraph",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-e1cb77644c25dc9b7a00",
+        "pdf_page": 98,
+        "kind": "page_text",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-cd1fa5ed08e4c217d2a4",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 0.031746031746031744,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-94dd364df209d4309585",
+        "pdf_page": 20,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-af8c26cc0b51078b06e0",
+        "pdf_page": 102,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-4239c6f4caad58554543",
+        "pdf_page": 11,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-9781e576122371a7e9fb",
+        "pdf_page": 99,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-e1cb77644c25dc9b7a00",
+      "txt-cd1fa5ed08e4c217d2a4",
+      "txt-94dd364df209d4309585",
+      "txt-af8c26cc0b51078b06e0",
+      "txt-4239c6f4caad58554543"
+    ],
+    "context_chars": 4884,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.3012384999992719
+  },
+  {
+    "query_id": "d-x02",
+    "group": "text",
+    "answerable": true,
+    "method": "bm25",
+    "question": "How many engineers did Viet Nam have in its semiconductor industry, according to the report?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Viet Nam currently has around 26 000 engineers in the semiconductor industry",
+        "visual_region": "Box 4.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-8e42d9c609197b8b9700",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 22.412261914099304,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 21.229165010302392,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-59bb6ee402e0b398cb21",
+        "pdf_page": 114,
+        "kind": "page_text",
+        "score": 16.161734374594868,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 14.915789782709513,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-61728a5b471ed2afa254",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 12.701731754428767,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-3edde8fc6b0c6714cc48",
+        "pdf_page": 109,
+        "kind": "page_text",
+        "score": 12.253914719269325,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-8e42d9c609197b8b9700",
+      "txt-c15dd72f3301e1acc5db",
+      "txt-59bb6ee402e0b398cb21",
+      "vis-1a6b56953aaf10b90078",
+      "txt-61728a5b471ed2afa254",
+      "txt-3edde8fc6b0c6714cc48"
+    ],
+    "context_chars": 4561,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.03124489999936486
+  },
+  {
+    "query_id": "d-x02",
+    "group": "text",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "How many engineers did Viet Nam have in its semiconductor industry, according to the report?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Viet Nam currently has around 26 000 engineers in the semiconductor industry",
+        "visual_region": "Box 4.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.836738109588623,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-8e42d9c609197b8b9700",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.822310209274292,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-59bb6ee402e0b398cb21",
+        "pdf_page": 114,
+        "kind": "page_text",
+        "score": 0.7892189025878906,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 0.77573561668396,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-note-24bff61b35c486952c87",
+        "pdf_page": 118,
+        "kind": "human_visual_note",
+        "score": 0.759632408618927,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-1a82f70fbf16cf852a3f",
+        "pdf_page": 120,
+        "kind": "page_text",
+        "score": 0.7572206854820251,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-c15dd72f3301e1acc5db",
+      "txt-8e42d9c609197b8b9700",
+      "txt-59bb6ee402e0b398cb21",
+      "vis-1a6b56953aaf10b90078",
+      "vis-note-24bff61b35c486952c87",
+      "txt-1a82f70fbf16cf852a3f"
+    ],
+    "context_chars": 4604,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2884984999991502
+  },
+  {
+    "query_id": "d-x02",
+    "group": "text",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "How many engineers did Viet Nam have in its semiconductor industry, according to the report?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 118,
+        "printed_page": 116,
+        "evidence": "Viet Nam currently has around 26 000 engineers in the semiconductor industry",
+        "visual_region": "Box 4.2",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-8e42d9c609197b8b9700",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.03252247488101534,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-c15dd72f3301e1acc5db",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.03252247488101534,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "txt-59bb6ee402e0b398cb21",
+        "pdf_page": 114,
+        "kind": "page_text",
+        "score": 0.031746031746031744,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-1a6b56953aaf10b90078",
+        "pdf_page": 118,
+        "kind": "visual_page",
+        "score": 0.03125,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-61728a5b471ed2afa254",
+        "pdf_page": 118,
+        "kind": "page_text",
+        "score": 0.015384615384615385,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-note-24bff61b35c486952c87",
+        "pdf_page": 118,
+        "kind": "human_visual_note",
+        "score": 0.015384615384615385,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-8e42d9c609197b8b9700",
+      "txt-c15dd72f3301e1acc5db",
+      "txt-59bb6ee402e0b398cb21",
+      "vis-1a6b56953aaf10b90078",
+      "txt-61728a5b471ed2afa254",
+      "vis-note-24bff61b35c486952c87"
+    ],
+    "context_chars": 4422,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        2
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2579615000004196
+  },
+  {
+    "query_id": "d-x03",
+    "group": "text",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What percentage of secondary-school students in Korea continue to college or university, according to Box 4.3?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 119,
+        "printed_page": 117,
+        "evidence": "more than 80% of secondary school graduates in Korea continue to college or universities",
+        "visual_region": "Box 4.3",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7cb4c7a5b382ca56d087",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 55.867661566083896,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-beb7155222f9a2b4efa6",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 39.08521968339169,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-42371fec92cdf385ab80",
+        "pdf_page": 119,
+        "kind": "visual_page",
+        "score": 35.030373038320555,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4e8e9a5c33d9e3275754",
+        "pdf_page": 63,
+        "kind": "page_text",
+        "score": 29.329378907139073,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-fe409fad9c77e3f370a6",
+        "pdf_page": 8,
+        "kind": "visual_page",
+        "score": 27.633497020220343,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-58ead8bd5eb942399786",
+        "pdf_page": 8,
+        "kind": "page_text",
+        "score": 27.2483364464133,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7cb4c7a5b382ca56d087",
+      "txt-beb7155222f9a2b4efa6",
+      "vis-42371fec92cdf385ab80",
+      "txt-4e8e9a5c33d9e3275754",
+      "txt-58ead8bd5eb942399786"
+    ],
+    "context_chars": 4751,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.08476249999966967
+  },
+  {
+    "query_id": "d-x03",
+    "group": "text",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What percentage of secondary-school students in Korea continue to college or university, according to Box 4.3?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 119,
+        "printed_page": 117,
+        "evidence": "more than 80% of secondary school graduates in Korea continue to college or universities",
+        "visual_region": "Box 4.3",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7cb4c7a5b382ca56d087",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 0.7674750089645386,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-beb7155222f9a2b4efa6",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 0.7664612531661987,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-42371fec92cdf385ab80",
+        "pdf_page": 119,
+        "kind": "visual_page",
+        "score": 0.7424477338790894,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-b9349802a33319fb3bfd",
+        "pdf_page": 114,
+        "kind": "page_text",
+        "score": 0.7376458644866943,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-98fdeb8fb3805b260a14",
+        "pdf_page": 115,
+        "kind": "page_text",
+        "score": 0.7229507565498352,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-c6d99cb2149712021fbb",
+        "pdf_page": 115,
+        "kind": "visual_page",
+        "score": 0.7176648378372192,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7cb4c7a5b382ca56d087",
+      "txt-beb7155222f9a2b4efa6",
+      "vis-42371fec92cdf385ab80",
+      "txt-b9349802a33319fb3bfd",
+      "txt-98fdeb8fb3805b260a14",
+      "vis-c6d99cb2149712021fbb"
+    ],
+    "context_chars": 3816,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.4720037000006414
+  },
+  {
+    "query_id": "d-x03",
+    "group": "text",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What percentage of secondary-school students in Korea continue to college or university, according to Box 4.3?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 119,
+        "printed_page": 117,
+        "evidence": "more than 80% of secondary school graduates in Korea continue to college or universities",
+        "visual_region": "Box 4.3",
+        "visual_annotation": null
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-7cb4c7a5b382ca56d087",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-beb7155222f9a2b4efa6",
+        "pdf_page": 119,
+        "kind": "page_text",
+        "score": 0.03225806451612903,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-42371fec92cdf385ab80",
+        "pdf_page": 119,
+        "kind": "visual_page",
+        "score": 0.031746031746031744,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4e8e9a5c33d9e3275754",
+        "pdf_page": 63,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-b9349802a33319fb3bfd",
+        "pdf_page": 114,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-98fdeb8fb3805b260a14",
+        "pdf_page": 115,
+        "kind": "page_text",
+        "score": 0.015384615384615385,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-7cb4c7a5b382ca56d087",
+      "txt-beb7155222f9a2b4efa6",
+      "vis-42371fec92cdf385ab80",
+      "txt-4e8e9a5c33d9e3275754",
+      "txt-b9349802a33319fb3bfd",
+      "txt-98fdeb8fb3805b260a14"
+    ],
+    "context_chars": 4942,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.4307493999995131
+  },
+  {
+    "query_id": "d-u01",
+    "group": "text",
+    "answerable": false,
+    "method": "bm25",
+    "question": "How many electric buses were registered in Hanoi in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-0705c7c2710f3796728a",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 24.67829892021361,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-aa6f6e2a23ebeb9349da",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 10.403306168068022,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-fd7f9a6ffc3b2d4cd668",
+        "pdf_page": 103,
+        "kind": "page_text",
+        "score": 9.648988659168172,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0d379eac978af3d61987",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 9.22766190006731,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-252efd8facdcfd12bae1",
+        "pdf_page": 105,
+        "kind": "page_text",
+        "score": 7.913069869416859,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-b69ce48a37b4bcf44901",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 7.894862406628943,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-0705c7c2710f3796728a",
+      "txt-aa6f6e2a23ebeb9349da",
+      "txt-fd7f9a6ffc3b2d4cd668",
+      "txt-0d379eac978af3d61987",
+      "txt-252efd8facdcfd12bae1"
+    ],
+    "context_chars": 4516,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.028328399999736575
+  },
+  {
+    "query_id": "d-u01",
+    "group": "text",
+    "answerable": false,
+    "method": "dense_cosine",
+    "question": "How many electric buses were registered in Hanoi in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-0705c7c2710f3796728a",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 0.737385630607605,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-2fac8e2fe710fc04eb5c",
+        "pdf_page": 89,
+        "kind": "page_text",
+        "score": 0.7236882448196411,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-c0e9ffebc2cd8f27ddda",
+        "pdf_page": 89,
+        "kind": "page_text",
+        "score": 0.7226402759552002,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-15feb6a876d426fae28b",
+        "pdf_page": 51,
+        "kind": "page_text",
+        "score": 0.7221965789794922,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-294b137d9c472fc0da41",
+        "pdf_page": 84,
+        "kind": "page_text",
+        "score": 0.7131862044334412,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-eb4fe223a66ac6f55858",
+        "pdf_page": 74,
+        "kind": "page_text",
+        "score": 0.704505980014801,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-0705c7c2710f3796728a",
+      "txt-2fac8e2fe710fc04eb5c",
+      "txt-c0e9ffebc2cd8f27ddda",
+      "txt-15feb6a876d426fae28b",
+      "txt-294b137d9c472fc0da41",
+      "txt-eb4fe223a66ac6f55858"
+    ],
+    "context_chars": 4382,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.6514137000003757
+  },
+  {
+    "query_id": "d-u01",
+    "group": "text",
+    "answerable": false,
+    "method": "hybrid_rrf",
+    "question": "How many electric buses were registered in Hanoi in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-0705c7c2710f3796728a",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 0.03278688524590164,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-2fac8e2fe710fc04eb5c",
+        "pdf_page": 89,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-aa6f6e2a23ebeb9349da",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-c0e9ffebc2cd8f27ddda",
+        "pdf_page": 89,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-fd7f9a6ffc3b2d4cd668",
+        "pdf_page": 103,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-0d379eac978af3d61987",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-0705c7c2710f3796728a",
+      "txt-2fac8e2fe710fc04eb5c",
+      "txt-aa6f6e2a23ebeb9349da",
+      "txt-c0e9ffebc2cd8f27ddda",
+      "txt-0d379eac978af3d61987"
+    ],
+    "context_chars": 4525,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.5904195000002801
+  },
+  {
+    "query_id": "d-u02",
+    "group": "text",
+    "answerable": false,
+    "method": "bm25",
+    "question": "What was the exact sample size of the 2024 randomized trial of Vietnamese bank consolidation?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-c3f8080713ec2399b6db",
+        "pdf_page": 52,
+        "kind": "page_text",
+        "score": 14.328709222707156,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-2dd5187644868cdb61e6",
+        "pdf_page": 126,
+        "kind": "page_text",
+        "score": 12.999750255621262,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-56c366901b6a9babbf39",
+        "pdf_page": 108,
+        "kind": "page_text",
+        "score": 11.412848062474861,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-4ccbcde2b59c3a03af5e",
+        "pdf_page": 105,
+        "kind": "page_text",
+        "score": 11.078597806689325,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-d8b6e04ed9194443fcf7",
+        "pdf_page": 32,
+        "kind": "page_text",
+        "score": 10.767108638605368,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-1678afabeaba0b538cda",
+        "pdf_page": 23,
+        "kind": "page_text",
+        "score": 10.536910609788837,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-c3f8080713ec2399b6db",
+      "txt-2dd5187644868cdb61e6",
+      "txt-56c366901b6a9babbf39",
+      "txt-4ccbcde2b59c3a03af5e",
+      "txt-d8b6e04ed9194443fcf7"
+    ],
+    "context_chars": 4760,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.03833020000001852
+  },
+  {
+    "query_id": "d-u02",
+    "group": "text",
+    "answerable": false,
+    "method": "dense_cosine",
+    "question": "What was the exact sample size of the 2024 randomized trial of Vietnamese bank consolidation?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-f01b62a48aeb8e5eb6b7",
+        "pdf_page": 136,
+        "kind": "page_text",
+        "score": 0.7224122285842896,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-a49c65f23ab84ce7e3b3",
+        "pdf_page": 47,
+        "kind": "page_text",
+        "score": 0.7084106206893921,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-1a82f70fbf16cf852a3f",
+        "pdf_page": 120,
+        "kind": "page_text",
+        "score": 0.7052429914474487,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-691e33f9698f846f1f46",
+        "pdf_page": 32,
+        "kind": "page_text",
+        "score": 0.7047884464263916,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-c3b079b80c2bc6991dd4",
+        "pdf_page": 27,
+        "kind": "page_text",
+        "score": 0.7031002640724182,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-6d3343c93795a8737ca4",
+        "pdf_page": 48,
+        "kind": "page_text",
+        "score": 0.7028791308403015,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-f01b62a48aeb8e5eb6b7",
+      "txt-a49c65f23ab84ce7e3b3",
+      "txt-1a82f70fbf16cf852a3f",
+      "txt-691e33f9698f846f1f46",
+      "txt-6d3343c93795a8737ca4"
+    ],
+    "context_chars": 4481,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.7652686000001268
+  },
+  {
+    "query_id": "d-u02",
+    "group": "text",
+    "answerable": false,
+    "method": "hybrid_rrf",
+    "question": "What was the exact sample size of the 2024 randomized trial of Vietnamese bank consolidation?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-c3f8080713ec2399b6db",
+        "pdf_page": 52,
+        "kind": "page_text",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-f01b62a48aeb8e5eb6b7",
+        "pdf_page": 136,
+        "kind": "page_text",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-2dd5187644868cdb61e6",
+        "pdf_page": 126,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-a49c65f23ab84ce7e3b3",
+        "pdf_page": 47,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-1a82f70fbf16cf852a3f",
+        "pdf_page": 120,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-56c366901b6a9babbf39",
+        "pdf_page": 108,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-c3f8080713ec2399b6db",
+      "txt-f01b62a48aeb8e5eb6b7",
+      "txt-2dd5187644868cdb61e6",
+      "txt-a49c65f23ab84ce7e3b3",
+      "txt-1a82f70fbf16cf852a3f"
+    ],
+    "context_chars": 5106,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.6105844000003344
+  },
+  {
+    "query_id": "d-u03",
+    "group": "text",
+    "answerable": false,
+    "method": "bm25",
+    "question": "What was the province-level poverty rate in Viet Nam in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-a81fe2d0e7773fcead70",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 15.373036515830185,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-6526e22e38a7837fb252",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 12.136745748819584,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-e1cb77644c25dc9b7a00",
+        "pdf_page": 98,
+        "kind": "page_text",
+        "score": 11.679959742132212,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-77782ed5196817be8fd3",
+        "pdf_page": 53,
+        "kind": "page_text",
+        "score": 11.591288468093627,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-0a11e43f6291167c5ccf",
+        "pdf_page": 112,
+        "kind": "page_text",
+        "score": 11.493549560865613,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-cd1fa5ed08e4c217d2a4",
+        "pdf_page": 104,
+        "kind": "page_text",
+        "score": 11.297999131588416,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-a81fe2d0e7773fcead70",
+      "txt-6526e22e38a7837fb252",
+      "txt-e1cb77644c25dc9b7a00",
+      "txt-77782ed5196817be8fd3",
+      "txt-0a11e43f6291167c5ccf"
+    ],
+    "context_chars": 5132,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.0336594000000332
+  },
+  {
+    "query_id": "d-u03",
+    "group": "text",
+    "answerable": false,
+    "method": "dense_cosine",
+    "question": "What was the province-level poverty rate in Viet Nam in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-43b3fa670deb6f62b7c0",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 0.7813833355903625,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-edbec89c91097518b0b8",
+        "pdf_page": 13,
+        "kind": "page_text",
+        "score": 0.7611162662506104,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-77782ed5196817be8fd3",
+        "pdf_page": 53,
+        "kind": "page_text",
+        "score": 0.7602183818817139,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-c3f8080713ec2399b6db",
+        "pdf_page": 52,
+        "kind": "page_text",
+        "score": 0.7587094306945801,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-15feb6a876d426fae28b",
+        "pdf_page": 51,
+        "kind": "page_text",
+        "score": 0.7520303726196289,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-3eed22ded6104537d458",
+        "pdf_page": 52,
+        "kind": "page_text",
+        "score": 0.7502609491348267,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-43b3fa670deb6f62b7c0",
+      "txt-edbec89c91097518b0b8",
+      "txt-77782ed5196817be8fd3",
+      "txt-c3f8080713ec2399b6db",
+      "txt-15feb6a876d426fae28b",
+      "txt-3eed22ded6104537d458"
+    ],
+    "context_chars": 4693,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.38938250000046537
+  },
+  {
+    "query_id": "d-u03",
+    "group": "text",
+    "answerable": false,
+    "method": "hybrid_rrf",
+    "question": "What was the province-level poverty rate in Viet Nam in 2025?",
+    "gold": [],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "txt-77782ed5196817be8fd3",
+        "pdf_page": 53,
+        "kind": "page_text",
+        "score": 0.03149801587301587,
+        "evidence_indices": []
+      },
+      {
+        "rank": 2,
+        "id": "txt-43b3fa670deb6f62b7c0",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-a81fe2d0e7773fcead70",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 0.01639344262295082,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-6526e22e38a7837fb252",
+        "pdf_page": 50,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-edbec89c91097518b0b8",
+        "pdf_page": 13,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-e1cb77644c25dc9b7a00",
+        "pdf_page": 98,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "txt-77782ed5196817be8fd3",
+      "txt-43b3fa670deb6f62b7c0",
+      "txt-a81fe2d0e7773fcead70",
+      "txt-6526e22e38a7837fb252",
+      "txt-edbec89c91097518b0b8"
+    ],
+    "context_chars": 4994,
+    "hit1_any_evidence": false,
+    "evidence_hit3_any": false,
+    "complete_evidence_at_3": false,
+    "context_has_complete_evidence": false,
+    "evidence_ranks": [],
+    "context_coverage_by_gold": [],
+    "elapsed_seconds": 0.3468932000005225
+  },
+  {
+    "query_id": "d-v01",
+    "group": "visual",
+    "answerable": true,
+    "method": "bm25",
+    "question": "In the city photograph, what is reflected on the water?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 18,
+        "printed_page": 16,
+        "evidence": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_region": "Full-page urban photograph, water and skyline reflection",
+        "visual_annotation": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-09a238ece439c1047c82",
+        "pdf_page": 18,
+        "kind": "human_visual_note",
+        "score": 19.078142903336072,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-a8a26390e6afae5cb7ca",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 11.618692796137635,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-0ab038c8e6f8c1ad28b3",
+        "pdf_page": 62,
+        "kind": "page_text",
+        "score": 11.297306278343358,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-36336cca2c18e785d0f8",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 10.379381888184664,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-07932ea15486da26c4d7",
+        "pdf_page": 91,
+        "kind": "page_text",
+        "score": 10.310370290507077,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-9b7beb9b0b864f1bf981",
+        "pdf_page": 91,
+        "kind": "page_text",
+        "score": 10.006600904155395,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-09a238ece439c1047c82",
+      "txt-a8a26390e6afae5cb7ca",
+      "txt-0ab038c8e6f8c1ad28b3",
+      "txt-36336cca2c18e785d0f8",
+      "txt-07932ea15486da26c4d7",
+      "txt-9b7beb9b0b864f1bf981"
+    ],
+    "context_chars": 4050,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.0294475999999122
+  },
+  {
+    "query_id": "d-v01",
+    "group": "visual",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "In the city photograph, what is reflected on the water?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 18,
+        "printed_page": 16,
+        "evidence": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_region": "Full-page urban photograph, water and skyline reflection",
+        "visual_annotation": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-09a238ece439c1047c82",
+        "pdf_page": 18,
+        "kind": "human_visual_note",
+        "score": 0.8145790100097656,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-4f78b056d6326e2896c4",
+        "pdf_page": 13,
+        "kind": "page_text",
+        "score": 0.6575108766555786,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-6d0529d0f61c98a75af9",
+        "pdf_page": 48,
+        "kind": "human_visual_note",
+        "score": 0.653548538684845,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-5fd0bccd8b4de124a9d5",
+        "pdf_page": 1,
+        "kind": "visual_page",
+        "score": 0.6507155299186707,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-9026571f72d718cd3bbb",
+        "pdf_page": 9,
+        "kind": "page_text",
+        "score": 0.6479799747467041,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-fd15736d6b21f0651a3a",
+        "pdf_page": 139,
+        "kind": "visual_page",
+        "score": 0.6452114582061768,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-09a238ece439c1047c82",
+      "txt-4f78b056d6326e2896c4",
+      "vis-note-6d0529d0f61c98a75af9",
+      "vis-5fd0bccd8b4de124a9d5",
+      "txt-9026571f72d718cd3bbb",
+      "vis-fd15736d6b21f0651a3a"
+    ],
+    "context_chars": 942,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.23762270000042918
+  },
+  {
+    "query_id": "d-v01",
+    "group": "visual",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "In the city photograph, what is reflected on the water?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 18,
+        "printed_page": 16,
+        "evidence": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_region": "Full-page urban photograph, water and skyline reflection",
+        "visual_annotation": "Photo evidence: an urban skyline with several high-rise buildings stands along a broad waterway; the towers and city lights are reflected on the water.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-09a238ece439c1047c82",
+        "pdf_page": 18,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-4f78b056d6326e2896c4",
+        "pdf_page": 13,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-a8a26390e6afae5cb7ca",
+        "pdf_page": 77,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0ab038c8e6f8c1ad28b3",
+        "pdf_page": 62,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-note-6d0529d0f61c98a75af9",
+        "pdf_page": 48,
+        "kind": "human_visual_note",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-36336cca2c18e785d0f8",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-09a238ece439c1047c82",
+      "txt-4f78b056d6326e2896c4",
+      "txt-a8a26390e6afae5cb7ca",
+      "txt-0ab038c8e6f8c1ad28b3",
+      "vis-note-6d0529d0f61c98a75af9",
+      "txt-36336cca2c18e785d0f8"
+    ],
+    "context_chars": 3086,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2367580000000089
+  },
+  {
+    "query_id": "d-v02",
+    "group": "visual",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What infrastructure is visible beside the cars in the transport photograph?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 70,
+        "printed_page": 68,
+        "evidence": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_region": "Full-page photograph of EV charging posts",
+        "visual_annotation": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-3898f0d906b074582312",
+        "pdf_page": 70,
+        "kind": "human_visual_note",
+        "score": 16.539244337507327,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-6e06ed6a2faff9186b4a",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 13.698432952560793,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-aa6f6e2a23ebeb9349da",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 12.36917680831226,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "vis-note-6d0529d0f61c98a75af9",
+        "pdf_page": 48,
+        "kind": "human_visual_note",
+        "score": 11.288362168454691,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-7ee3da27b5d5e622261d",
+        "pdf_page": 110,
+        "kind": "page_text",
+        "score": 11.0348006724915,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-9d401aabb1e9b839d878",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 10.647699912597737,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-3898f0d906b074582312",
+      "txt-6e06ed6a2faff9186b4a",
+      "txt-aa6f6e2a23ebeb9349da",
+      "vis-note-6d0529d0f61c98a75af9",
+      "txt-7ee3da27b5d5e622261d",
+      "txt-9d401aabb1e9b839d878"
+    ],
+    "context_chars": 4697,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.026370099999439844
+  },
+  {
+    "query_id": "d-v02",
+    "group": "visual",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What infrastructure is visible beside the cars in the transport photograph?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 70,
+        "printed_page": 68,
+        "evidence": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_region": "Full-page photograph of EV charging posts",
+        "visual_annotation": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-3898f0d906b074582312",
+        "pdf_page": 70,
+        "kind": "human_visual_note",
+        "score": 0.7518009543418884,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-262c4c2df76d038493e9",
+        "pdf_page": 73,
+        "kind": "page_text",
+        "score": 0.7064825892448425,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-09a238ece439c1047c82",
+        "pdf_page": 18,
+        "kind": "human_visual_note",
+        "score": 0.6987978219985962,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-fc6636ec03e0f26806b3",
+        "pdf_page": 109,
+        "kind": "page_text",
+        "score": 0.6912134289741516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-3d2bc8c5c0af7600558e",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.6851558089256287,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-d1f97aba66c5a2d34331",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.6797239780426025,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-3898f0d906b074582312",
+      "txt-262c4c2df76d038493e9",
+      "vis-note-09a238ece439c1047c82",
+      "txt-fc6636ec03e0f26806b3",
+      "txt-3d2bc8c5c0af7600558e",
+      "txt-d1f97aba66c5a2d34331"
+    ],
+    "context_chars": 3533,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.23757990000012796
+  },
+  {
+    "query_id": "d-v02",
+    "group": "visual",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What infrastructure is visible beside the cars in the transport photograph?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 70,
+        "printed_page": 68,
+        "evidence": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_region": "Full-page photograph of EV charging posts",
+        "visual_annotation": "Photo evidence: a row of electric-vehicle charging posts with black charging cables stands beside teal cars in an indoor parking area.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-3898f0d906b074582312",
+        "pdf_page": 70,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "txt-262c4c2df76d038493e9",
+        "pdf_page": 73,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-6e06ed6a2faff9186b4a",
+        "pdf_page": 88,
+        "kind": "page_text",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-aa6f6e2a23ebeb9349da",
+        "pdf_page": 92,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-note-09a238ece439c1047c82",
+        "pdf_page": 18,
+        "kind": "human_visual_note",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-fc6636ec03e0f26806b3",
+        "pdf_page": 109,
+        "kind": "page_text",
+        "score": 0.015625,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-3898f0d906b074582312",
+      "txt-262c4c2df76d038493e9",
+      "txt-6e06ed6a2faff9186b4a",
+      "txt-aa6f6e2a23ebeb9349da",
+      "vis-note-09a238ece439c1047c82",
+      "txt-fc6636ec03e0f26806b3"
+    ],
+    "context_chars": 3240,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.23238930000024993
+  },
+  {
+    "query_id": "d-v03",
+    "group": "visual",
+    "answerable": true,
+    "method": "bm25",
+    "question": "What protective equipment does the foreground factory worker wear?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_region": "Full-page factory photograph, foreground worker",
+        "visual_annotation": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-238a42a3bdd743b1036e",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 28.166639151651196,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-note-6d0529d0f61c98a75af9",
+        "pdf_page": 48,
+        "kind": "human_visual_note",
+        "score": 15.336831458361193,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "vis-note-d65ff935ed1abc0ec609",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 11.508513149846772,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-92649d1bb6010391401e",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 8.494484593367584,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-0dc51c133c90c5de856d",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 8.138742576609438,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-1a7583443ddebd55bfa8",
+        "pdf_page": 73,
+        "kind": "page_text",
+        "score": 7.793978910858393,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-238a42a3bdd743b1036e",
+      "vis-note-6d0529d0f61c98a75af9",
+      "vis-note-d65ff935ed1abc0ec609",
+      "txt-92649d1bb6010391401e",
+      "txt-0dc51c133c90c5de856d",
+      "txt-1a7583443ddebd55bfa8"
+    ],
+    "context_chars": 4493,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.02333230000022013
+  },
+  {
+    "query_id": "d-v03",
+    "group": "visual",
+    "answerable": true,
+    "method": "dense_cosine",
+    "question": "What protective equipment does the foreground factory worker wear?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_region": "Full-page factory photograph, foreground worker",
+        "visual_annotation": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-238a42a3bdd743b1036e",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 0.815237283706665,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-note-d65ff935ed1abc0ec609",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 0.7529603242874146,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-57c9df9c323e505536c2",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.7046932578086853,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-92649d1bb6010391401e",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.6817460060119629,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "txt-0dc51c133c90c5de856d",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.6810508370399475,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "vis-e1fd83b4673876913f2e",
+        "pdf_page": 112,
+        "kind": "visual_page",
+        "score": 0.6807353496551514,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-238a42a3bdd743b1036e",
+      "vis-note-d65ff935ed1abc0ec609",
+      "txt-57c9df9c323e505536c2",
+      "txt-92649d1bb6010391401e",
+      "txt-0dc51c133c90c5de856d",
+      "vis-e1fd83b4673876913f2e"
+    ],
+    "context_chars": 3784,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.2162450000005265
+  },
+  {
+    "query_id": "d-v03",
+    "group": "visual",
+    "answerable": true,
+    "method": "hybrid_rrf",
+    "question": "What protective equipment does the foreground factory worker wear?",
+    "gold": [
+      {
+        "source_id": "oecd-economic-surveys-viet-nam-2025",
+        "pdf_page": 96,
+        "printed_page": 94,
+        "evidence": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_region": "Full-page factory photograph, foreground worker",
+        "visual_annotation": "Photo evidence: a factory assembly floor has multiple workstations and workers in blue uniforms; the foreground worker wears a red cap, face mask and white gloves.",
+        "visual_type": "photograph"
+      }
+    ],
+    "top_hits": [
+      {
+        "rank": 1,
+        "id": "vis-note-238a42a3bdd743b1036e",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 0.03278688524590164,
+        "evidence_indices": [
+          0
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "vis-note-d65ff935ed1abc0ec609",
+        "pdf_page": 96,
+        "kind": "human_visual_note",
+        "score": 0.03200204813108039,
+        "evidence_indices": []
+      },
+      {
+        "rank": 3,
+        "id": "txt-92649d1bb6010391401e",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.03125,
+        "evidence_indices": []
+      },
+      {
+        "rank": 4,
+        "id": "txt-0dc51c133c90c5de856d",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.03076923076923077,
+        "evidence_indices": []
+      },
+      {
+        "rank": 5,
+        "id": "vis-note-6d0529d0f61c98a75af9",
+        "pdf_page": 48,
+        "kind": "human_visual_note",
+        "score": 0.016129032258064516,
+        "evidence_indices": []
+      },
+      {
+        "rank": 6,
+        "id": "txt-57c9df9c323e505536c2",
+        "pdf_page": 58,
+        "kind": "page_text",
+        "score": 0.015873015873015872,
+        "evidence_indices": []
+      }
+    ],
+    "context_ids": [
+      "vis-note-238a42a3bdd743b1036e",
+      "vis-note-d65ff935ed1abc0ec609",
+      "txt-92649d1bb6010391401e",
+      "txt-0dc51c133c90c5de856d",
+      "vis-note-6d0529d0f61c98a75af9",
+      "txt-57c9df9c323e505536c2"
+    ],
+    "context_chars": 3919,
+    "hit1_any_evidence": true,
+    "evidence_hit3_any": true,
+    "complete_evidence_at_3": true,
+    "context_has_complete_evidence": true,
+    "evidence_ranks": [
+      [
+        1
+      ]
+    ],
+    "context_coverage_by_gold": [
+      true
+    ],
+    "elapsed_seconds": 0.22952660000009928
+  }
+]

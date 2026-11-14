@@ -1,0 +1,115 @@
+{
+  "cases": 7,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "grounded_answer": {
+    "0": 3,
+    "1": 0,
+    "2": 2,
+    "N": 5,
+    "mean": 0.8
+  },
+  "citation_validity": {
+    "n": 2,
+    "N": 2
+  },
+  "answer_citation_coverage": {
+    "n": 2,
+    "N": 2
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 3,
+    "N": 5
+  },
+  "split": "test",
+  "configuration": "hybrid-8-4000",
+  "search_call_counts": {
+    "1": 4,
+    "2": 3
+  },
+  "mean_elapsed_seconds": 7.811843871428729,
+  "input_tokens": 16035,
+  "output_tokens": 1280,
+  "thinking_tokens": 0,
+  "total_tokens_reported": 17315,
+  "failed_attempts": 1,
+  "by_provider": {
+    "gemini": {
+      "models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "cases": 3,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 3,
+        "N": 3
+      },
+      "grounded_answer": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "N": 1,
+        "mean": 0.0
+      },
+      "citation_validity": {
+        "n": 0,
+        "N": 0
+      },
+      "answer_citation_coverage": {
+        "n": 0,
+        "N": 0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 1,
+        "N": 1
+      }
+    },
+    "groq": {
+      "models": [
+        "openai/gpt-oss-120b"
+      ],
+      "cases": 4,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 4,
+        "N": 4
+      },
+      "grounded_answer": {
+        "0": 2,
+        "1": 0,
+        "2": 2,
+        "N": 4,
+        "mean": 1.0
+      },
+      "citation_validity": {
+        "n": 2,
+        "N": 2
+      },
+      "answer_citation_coverage": {
+        "n": 2,
+        "N": 2
+      },
+      "abstention": {
+        "n": 0,
+        "N": 0
+      },
+      "false_abstention": {
+        "n": 2,
+        "N": 4
+      }
+    }
+  },
+  "usage_note": "Groq completion tokens can include reasoning; separate Groq reasoning counts are not available in these traces.",
+  "cost": "Not inferred from tokens; consult account billing."
+}

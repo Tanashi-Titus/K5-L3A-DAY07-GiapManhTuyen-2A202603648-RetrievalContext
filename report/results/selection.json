@@ -1,0 +1,34 @@
+{
+  "chosen": "hybrid-8-4000",
+  "baseline": "bm25-3-800",
+  "rationale": "Dev: hybrid context evidence 13/15, BM25 4/15; reviewed grounded mean 1.67/2 versus 1.20/2. Hybrid uses more tokens and has 22/24 supported citations versus 10/10 for BM25. Retrieval results and agent errors are retained.",
+  "benchmark_sha256": "448bb88380038f934f2a60628367f978cb71118c15a78b956a3f59dbb8482a2f",
+  "controller_versions": [
+    "gemini-v2",
+    "groq-v3"
+  ],
+  "provider_counts": {
+    "dense-3-800": {
+      "gemini": 17,
+      "groq": 0
+    },
+    "bm25-3-800": {
+      "gemini": 17,
+      "groq": 0
+    },
+    "hybrid-3-800": {
+      "gemini": 10,
+      "groq": 7
+    },
+    "hybrid-5-2400": {
+      "gemini": 10,
+      "groq": 7
+    },
+    "hybrid-8-4000": {
+      "gemini": 17,
+      "groq": 0
+    }
+  },
+  "recorded_utc": "2026-11-14T08:07:05.787348+00:00",
+  "criteria": "report/dev_selection_criteria.md"
+}

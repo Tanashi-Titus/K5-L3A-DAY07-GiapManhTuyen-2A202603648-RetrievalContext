@@ -1,0 +1,24 @@
+{
+  "title": "OECD Economic Surveys: Viet Nam 2025",
+  "edition": "June 2025, Volume 2025/16",
+  "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/oecd-economic-surveys-viet-nam-2025_f2511b78/fb37254b-en.pdf",
+  "citation": "OECD (2025), OECD Economic Surveys: Viet Nam 2025, OECD Publishing, Paris, https://doi.org/10.1787/fb37254b-en.",
+  "license": "CC BY 4.0; third-party material may be excluded from this licence",
+  "pdf_sha256": "e8ca6a3c51f44585c915bc032f991d91026ba772400584ff3a3fa764c05f5b0c",
+  "pdf_pages": 139,
+  "text_chunk_count": 715,
+  "visual_page_count": 96,
+  "table_record_count": 16,
+  "pages_with_low_text": [
+    1,
+    2,
+    3,
+    95
+  ],
+  "page_mapping": "Every record has one-based physical PDF page and the printed page label when detected.",
+  "limitations": [
+    "PDF text is extracted from the embedded text layer; scanned or vector-only label errors should be checked against the page crop.",
+    "All figure/table caption pages are rendered for visual lookup; crops are local references and should not be redistributed without checking third-party rights.",
+    "No standalone informative photographs or flow diagrams were identified in the selected benchmark visuals; the report primarily uses data figures and charts."
+  ]
+}

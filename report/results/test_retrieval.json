@@ -1,0 +1,46 @@
+[
+  {
+    "configuration": "bm25-3-800",
+    "n_answerable": 5,
+    "hit1": {
+      "hits": 3,
+      "total": 5,
+      "rate": 0.6
+    },
+    "hit3": {
+      "hits": 3,
+      "total": 5,
+      "rate": 0.6
+    },
+    "context_hit": {
+      "hits": 3,
+      "total": 5,
+      "rate": 0.6
+    },
+    "mean_retrieval_seconds": 0.004953839999870979,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 45.25805400000081
+  },
+  {
+    "configuration": "hybrid-8-4000",
+    "n_answerable": 5,
+    "hit1": {
+      "hits": 3,
+      "total": 5,
+      "rate": 0.6
+    },
+    "hit3": {
+      "hits": 3,
+      "total": 5,
+      "rate": 0.6
+    },
+    "context_hit": {
+      "hits": 4,
+      "total": 5,
+      "rate": 0.8
+    },
+    "mean_retrieval_seconds": 0.3560176800005138,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 45.25805400000081
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "configuration": "dense-3-800",
+    "n_answerable": 15,
+    "hit1": {
+      "hits": 8,
+      "total": 15,
+      "rate": 0.5333333333333333
+    },
+    "hit3": {
+      "hits": 12,
+      "total": 15,
+      "rate": 0.8
+    },
+    "context_hit": {
+      "hits": 8,
+      "total": 15,
+      "rate": 0.5333333333333333
+    },
+    "mean_retrieval_seconds": 0.2656085466666506,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 54.68059259999973
+  },
+  {
+    "configuration": "bm25-3-800",
+    "n_answerable": 15,
+    "hit1": {
+      "hits": 4,
+      "total": 15,
+      "rate": 0.26666666666666666
+    },
+    "hit3": {
+      "hits": 10,
+      "total": 15,
+      "rate": 0.6666666666666666
+    },
+    "context_hit": {
+      "hits": 4,
+      "total": 15,
+      "rate": 0.26666666666666666
+    },
+    "mean_retrieval_seconds": 0.0024820200000249316,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 54.68059259999973
+  },
+  {
+    "configuration": "hybrid-3-800",
+    "n_answerable": 15,
+    "hit1": {
+      "hits": 6,
+      "total": 15,
+      "rate": 0.4
+    },
+    "hit3": {
+      "hits": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "context_hit": {
+      "hits": 6,
+      "total": 15,
+      "rate": 0.4
+    },
+    "mean_retrieval_seconds": 0.26998018000003865,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 54.68059259999973
+  },
+  {
+    "configuration": "hybrid-5-2400",
+    "n_answerable": 15,
+    "hit1": {
+      "hits": 6,
+      "total": 15,
+      "rate": 0.4
+    },
+    "hit3": {
+      "hits": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "context_hit": {
+      "hits": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "mean_retrieval_seconds": 0.2604770533333067,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 54.68059259999973
+  },
+  {
+    "configuration": "hybrid-8-4000",
+    "n_answerable": 15,
+    "hit1": {
+      "hits": 6,
+      "total": 15,
+      "rate": 0.4
+    },
+    "hit3": {
+      "hits": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "context_hit": {
+      "hits": 13,
+      "total": 15,
+      "rate": 0.8666666666666667
+    },
+    "mean_retrieval_seconds": 0.2599692400001004,
+    "embedding_cost": 0,
+    "model_warmup_seconds": 54.68059259999973
+  }
+]

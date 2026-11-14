@@ -1,0 +1,89 @@
+[
+  {
+    "configuration": "bm25-3-800",
+    "cases": 17,
+    "providers": {
+      "gemini": 17
+    },
+    "statuses": {
+      "abstain": 7,
+      "answered": 10
+    },
+    "search_calls": {
+      "2": 12,
+      "1": 5
+    },
+    "reported_total_tokens": 13722,
+    "failed_attempts": 0
+  },
+  {
+    "configuration": "dense-3-800",
+    "cases": 17,
+    "providers": {
+      "gemini": 17
+    },
+    "statuses": {
+      "answered": 11,
+      "abstain": 6
+    },
+    "search_calls": {
+      "2": 16,
+      "1": 1
+    },
+    "reported_total_tokens": 16213,
+    "failed_attempts": 0
+  },
+  {
+    "configuration": "hybrid-3-800",
+    "cases": 17,
+    "providers": {
+      "gemini": 10,
+      "groq": 7
+    },
+    "statuses": {
+      "answered": 10,
+      "abstain": 7
+    },
+    "search_calls": {
+      "1": 4,
+      "2": 13
+    },
+    "reported_total_tokens": 18543,
+    "failed_attempts": 2
+  },
+  {
+    "configuration": "hybrid-5-2400",
+    "cases": 17,
+    "providers": {
+      "groq": 7,
+      "gemini": 10
+    },
+    "statuses": {
+      "answered": 12,
+      "abstain": 5
+    },
+    "search_calls": {
+      "1": 10,
+      "2": 7
+    },
+    "reported_total_tokens": 26607,
+    "failed_attempts": 4
+  },
+  {
+    "configuration": "hybrid-8-4000",
+    "cases": 17,
+    "providers": {
+      "gemini": 17
+    },
+    "statuses": {
+      "answered": 13,
+      "abstain": 4
+    },
+    "search_calls": {
+      "1": 8,
+      "2": 9
+    },
+    "reported_total_tokens": 39059,
+    "failed_attempts": 0
+  }
+]

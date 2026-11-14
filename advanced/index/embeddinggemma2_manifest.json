@@ -1,0 +1,17 @@
+{
+  "model": "D:\\Tuyen\\vinuni\\lab\\K5-L3A-Day05-Track3-ThoCode\\models\\embeddinggemma-2",
+  "dimensions": 768,
+  "document_prompt": "Document",
+  "normalization": "L2; cosine-compatible",
+  "count": 841,
+  "counts_by_kind": {
+    "page_text": 715,
+    "table_page": 16,
+    "visual_page": 96,
+    "human_visual_note": 14
+  },
+  "input_index_sha256": "dc2d3e98f0ba72b1e6b77c88c24be0575b72b0c2c2bc3e452ec788740d37552f",
+  "vectors_file": "embeddinggemma2_vectors.npz",
+  "records_file": "embeddinggemma2_records.jsonl",
+  "query_prompt": "SearchQuery"
+}

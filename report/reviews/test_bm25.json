@@ -1,0 +1,62 @@
+[
+  {
+    "query_id": "t01",
+    "citation_support": [
+      true
+    ],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Context trang 4 nói optical tomogram mô tả trạng thái lượng tử."
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Context chỉ là tài liệu tham khảo, không định nghĩa q và p."
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      true
+    ],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Context trang 9 nêu Hermitian kéo theo toán tử tiến hóa unitary."
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true
+    ],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "Context trang 12 nêu Shannon entropy cho phân phối có điều kiện."
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "reason": "Context nêu entropy Shannon nhưng không có phép phân rã S1 + S2."
+  },
+  {
+    "query_id": "tu01",
+    "citation_support": [],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "abstention_correct": true,
+    "reason": "Agent đã tìm và từ chối; corpus không nêu phép đo thiết bị/nhiệt độ được hỏi."
+  },
+  {
+    "query_id": "tu02",
+    "citation_support": [],
+    "reviewer": "assistant; cần người nộp kiểm tra",
+    "abstention_correct": true,
+    "reason": "Agent đã tìm và từ chối; corpus không nêu phép đo thiết bị/nhiệt độ được hỏi."
+  }
+]

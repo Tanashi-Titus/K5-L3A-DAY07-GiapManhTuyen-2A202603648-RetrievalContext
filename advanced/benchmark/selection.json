@@ -1,0 +1,46 @@
+{
+  "benchmark_sha256": "cd2bd6e29da45a64381390009dd21e2907aa9ba829a10755b97b3acd075e052e",
+  "pipeline": "bm25-text-plus-human-visual-notes",
+  "retrieval_method": "bm25",
+  "provider": "openai",
+  "model": "gpt-5.4-mini",
+  "fallback_provider": null,
+  "fallback_model": null,
+  "top_k": 6,
+  "budget": 5200,
+  "max_searches": 3,
+  "dev_review": {
+    "trace": "advanced/results/openai-dev-bonus-bm25-final3/dev_traces.json",
+    "manual_review": "All 18 dev traces checked against answer, expected abstention, citations, and their supporting PDF page or reviewed image note; 15/15 answerable and 3/3 unanswerable passed.",
+    "answerable_correct": 15,
+    "answerable_total": 15,
+    "unanswerable_correct": 3,
+    "unanswerable_total": 3,
+    "overall_correct": 18,
+    "overall_total": 18,
+    "retrieval_comparison": "advanced/results/retrieval-dev-embedding/summary.json",
+    "selection_reason": "BM25 achieved 18/18 end-to-end dev answers and abstentions and delivered complete evidence to context on 15/15 answerable dev cases. Hybrid achieved 17/18 end-to-end and 15/15 evidence hit@3, with the same 15/15 context coverage; the model abstained on d-c01 although its exact visual note was in context."
+  },
+  "test_review": {
+    "trace": "advanced/results/openai-test-bonus-final2/test_traces.json",
+    "review": "advanced/benchmark/test_review.json",
+    "correct": 27,
+    "total": 30,
+    "answerable_correct": 21,
+    "answerable_total": 24,
+    "unanswerable_correct": 6,
+    "unanswerable_total": 6,
+    "rate": 0.9,
+    "group_scores": {"table":"6/6","visual":"4/5","chart":"5/5","multi_hop":"2/4","text":"10/10"},
+    "failures": {
+      "t-v01": "abstained on answerable urban photograph",
+      "t-m01": "citation does not support the 0.7%-of-GDP claim",
+      "t-m02": "omitted the requested diesel tax amount"
+    },
+    "provider_errors": 0,
+    "elapsed_seconds_total": 84.503,
+    "latency_seconds_mean": 2.817,
+    "usage": {"prompt_tokens":88747,"completion_tokens":2855,"total_tokens":91602,"api_cost":"not exposed by controller"},
+    "manual_review": "All 30 cases individually reviewed against the OECD source PDF page text or manually inspected page crops; each answer citation and required value/unit was checked."
+  }
+}

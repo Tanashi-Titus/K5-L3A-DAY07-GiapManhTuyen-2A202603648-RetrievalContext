@@ -1,0 +1,314 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Which two independent routes led to modern quantum mechanics in 1925–1926?",
+    "answerable": true,
+    "expected_answer": "Matrix mechanics and wave mechanics.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 2,
+        "evidence": "matrix mechanics of Heisenberg, Born and Jordan"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Who laid the conceptual foundations for the path-integral formulation?",
+    "answerable": true,
+    "expected_answer": "P. A. M. Dirac.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 2,
+        "evidence": "conceptual foundations of which were laid down in Dirac’s 1933 paper"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "What key physical idea does the paper say the path-integral approach introduces immediately?",
+    "answerable": true,
+    "expected_answer": "Quantum-mechanical superposition.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 2,
+        "evidence": "quantum-mechanical superposition"
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "What derivation is the first main aim of the paper?",
+    "answerable": true,
+    "expected_answer": "Derive the time-dependent Schrödinger equation from the Hamilton–Jacobi equation and path-integral postulate.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 4,
+        "evidence": "show how the time-dependent"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What classical equation is used with the path-integral dynamical postulate to derive the time-dependent Schrödinger equation?",
+    "answerable": true,
+    "expected_answer": "The Hamilton–Jacobi equation.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 4,
+        "evidence": "Hamilton-Jacobi equation"
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "In the path-integral formula, what does the action S represent?",
+    "answerable": true,
+    "expected_answer": "The time integral of the Lagrangian (up to a constant).",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 6,
+        "evidence": "the indeﬁnite time integral of the Lagrangian"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Which two normalized initial states are mentioned as examples?",
+    "answerable": true,
+    "expected_answer": "The coherent state and the squeezed state.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 2,
+        "evidence": "such as the coherent state [11] or the squeezed state"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "What does τ denote in the rest-particle path-amplitude expression?",
+    "answerable": true,
+    "expected_answer": "The proper time in the particle rest frame.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 10,
+        "evidence": "where τ is the proper (rest frame) time"
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "How is S written using p, x, E, and t in the Lorentz-invariant expression?",
+    "answerable": true,
+    "expected_answer": "S = px − Et.",
+    "gold": [
+      {
+        "source_id": "arxiv-1204.0653-v1",
+        "page": 26,
+        "evidence": "S = px −Et"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which operator satisfying evolution Equation (59) is an integral of motion?",
+    "answerable": true,
+    "expected_answer": "The density operator.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 9,
+        "evidence": "The density operator ˆρ(t) satisfying the evolution Equation (59) is the integral of motion."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Which physical examples does the article study using tomographic probability distributions?",
+    "answerable": true,
+    "expected_answer": "Quantum-oscillator states and a charged particle moving in an electric field.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 2,
+        "evidence": "quantum oscillator states and states of a charged particle moving in the electric field"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the probability representation, what physical quantity does X denote?",
+    "answerable": true,
+    "expected_answer": "The measured position of the charged particle in the transformed phase-space frame.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 3,
+        "evidence": "the parameter X is the position of the charged particle"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "What parameter values are assumed for the oscillator and Planck’s constant in the thermal-state section?",
+    "answerable": true,
+    "expected_answer": "m = ω = ℏ = 1.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 5,
+        "evidence": "m = ω = ¯h = 1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "How does the paper define the charge acceleration in a constant electric field?",
+    "answerable": true,
+    "expected_answer": "a = eE.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 7,
+        "evidence": "a = eE is the charge acceleration"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What is the oscillator initial state before its potential is removed?",
+    "answerable": true,
+    "expected_answer": "Thermal equilibrium at temperature T.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 10,
+        "evidence": "oscillator initially prepared in the state of thermal equilibrium at\ntemperature T"
+      }
+    ]
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "question": "Besides being an experimental tool, what can the optical tomogram describe?",
+    "answerable": true,
+    "expected_answer": "Quantum states.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 4,
+        "evidence": "the optical tomogram can also be employed to describe quantum\nstates"
+      }
+    ]
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "question": "What physical observables do the operators q and p represent in the evolution discussion?",
+    "answerable": true,
+    "expected_answer": "Position and momentum.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 9,
+        "evidence": "where ˆq and ˆp are the position and momentum operators"
+      }
+    ]
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "question": "What property does the evolution operator have when the Hamiltonian is Hermitian?",
+    "answerable": true,
+    "expected_answer": "It is unitary.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 9,
+        "evidence": "the evolution operator\nˆu(t) is the unitary operator"
+      }
+    ]
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "question": "Which entropy is introduced for the conditional probability distributions?",
+    "answerable": true,
+    "expected_answer": "Shannon entropy.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 12,
+        "evidence": "Shannon entropy"
+      }
+    ]
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "question": "How is the entropy S decomposed in the tomographic probability discussion?",
+    "answerable": true,
+    "expected_answer": "As the sum S = S1 + S2.",
+    "gold": [
+      {
+        "source_id": "mdpi-entropy-2023-25-213",
+        "page": 12,
+        "evidence": "The entropy has the form of sum S = S1 + S2"
+      }
+    ]
+  },
+  {
+    "id": "du01",
+    "split": "dev",
+    "question": "What measured experimental uncertainty in kelvin was reported for the oscillator temperature?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The indexed articles discuss theoretical states; no measured temperature uncertainty is specified."
+  },
+  {
+    "id": "du02",
+    "split": "dev",
+    "question": "How many human participants were enrolled to validate the path-integral derivation?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The derivation is theoretical and the indexed corpus contains no participant count."
+  },
+  {
+    "id": "tu01",
+    "split": "test",
+    "question": "Which instrument was used to measure the electric field in the charged-particle experiment?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The corpus presents theoretical evolution and specifies no such measurement instrument."
+  },
+  {
+    "id": "tu02",
+    "split": "test",
+    "question": "What was the measured numerical value of the oscillator temperature in the laboratory experiment?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The indexed treatment uses the symbolic parameter T and supplies no laboratory measurement."
+  }
+]
